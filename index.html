@@ -36,175 +36,612 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ââ NAV ââ */
+    /* -- NAV -- */
     nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      background: rgba(15,28,46,0.96) ; backdrop-filter: blur(12px);
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(15,28,46,0.96);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
-      padding: 0 24px;
     }
     .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 0 24px;
       display: flex; align-items: center; justify-content: space-between;
-      max-width: 1080px; margin: 0 auto; height: 64px;
+      height: 64px;
     }
-    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 600; color: var(--white); text-decoration: none; }
-    .nav-links { display: flex; gap: 28px; list-style: none; }
-    .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.86rem; letter-spacing: 0.07em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex; gap: 32px; list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
     .nav-links a:hover { color: var(--gold); }
 
-föçB×vVvC¢c°¢ÆWGFW"×76æs¢ãFVÓ°¢FWB×G&ç6f÷&Ó¢WW&66S°¢6öÆ÷#¢f"ÒÖvöÆB°¢Ö&vâÖ&÷GFöÓ¢°¢Ð¢ç&ö¦V7B×FFÆR°¢föçBÖfÖÇ¢uÆf"F7ÆrÂ6W&c°¢föçB×6¦S¢ã'&VÓ°¢föçB×vVvC¢c°¢6öÆ÷#¢f"ÒÖæg°¢Ö&vâÖ&÷GFöÓ¢'°¢ÆæRÖVvC¢ã3°¢Ð¢ç&ö¦V7BÖFW62°¢föçB×6¦S¢ãsW&VÓ°¢6öÆ÷#¢f"Ò×6ÆFR°¢ÆæRÖVvC¢ãsS°¢Ö&vâÖ&÷GFöÓ¢#°¢Ð¢ç&ö¦V7B×FööÇ2°¢F7Æ¢fÆW²fÆW×w&¢w&²v¢w°¢Ö&vâÖ&÷GFöÓ¢#'°¢Ð¢çFööÂ×Fr°¢föçB×6¦S¢ãw&VÓ°¢föçB×vVvC¢S°¢6öÆ÷#¢f"ÒÖæg°¢&6¶w&÷VæC¢&v&RÃ#ÃCbÃãb°¢FFæs¢G°¢&÷&FW"×&FW3¢G°¢ÆWGFW"×76æs¢ã6VÓ°¢Ð¢ç&ö¦V7BÖÆæ²°¢F7Æ¢æÆæRÖfÆW²ÆvâÖFV×3¢6VçFW#²v¢g°¢föçB×6¦S¢ã'&VÓ°¢föçB×vVvC¢c°¢6öÆ÷#¢f"ÒÖvöÆB°¢FWBÖFV6÷&Föã¢æöæS°¢ÆWGFW"×76æs¢ãFVÓ°¢G&ç6Föã¢vã'3°¢Ð¢ç&ö¦V7BÖÆæ³¦÷fW"²v¢²Ð¢ç&ö¦V7BÖÆæ²7fr²fÆW×6&æ³¢²Ð ¢ò¢)H)HUU%D4R)H)H¢ð¢6WW'F6R°¢&6¶w&÷VæC¢f"ÒÖæg°¢Ð¢æWW'F6RÖw&B°¢F7Æ¢w&C°¢w&B×FV×ÆFRÖ6öÇVÖç3¢&WVBWFòÖfÆÂÂÖæÖ#CÂg"°¢v¢#°¢Ð¢æWW'F6RÖ6&B°¢&6¶w&÷VæC¢&v&#SRÃ#SRÃ#SRÃãB°¢&÷&FW#¢6öÆB&v&#ÃcÃsbÃã"°¢&÷&FW"×&FW3¢°¢FFæs¢##G°¢G&ç6Föã¢ÆÂã#W3°¢Ð¢æWW'F6RÖ6&C¦÷fW"°¢&6¶w&÷VæC¢&v&#ÃcÃsbÃãr°¢&÷&FW"Ö6öÆ÷#¢&v&#ÃcÃsbÃã#°¢G&ç6f÷&Ó¢G&ç6ÆFUÓ'°¢Ð¢æWW'F6RÖ6öâ°¢vGF¢C²VvC¢C°¢&6¶w&÷VæC¢&v&#ÃcÃsbÃã"°¢&÷&FW"×&FW3¢°¢F7Æ¢fÆW²ÆvâÖFV×3¢6VçFW#²§W7FgÖ6öçFVçC¢6VçFW#°¢Ö&vâÖ&÷GFöÓ¢g°¢6öÆ÷#¢f"ÒÖvöÆB°¢föçB×6¦S¢ã&VÓ°¢Ð¢æWW'F6RÖæÖR°¢föçB×6¦S¢ã&VÓ°¢föçB×vVvC¢c°¢6öÆ÷#¢f"Ò×vFR°¢Ö&vâÖ&÷GFöÓ¢°¢ÆæRÖVvC¢ã3°¢Ð¢æWW'F6RÖFW62°¢föçB×6¦S¢ãs&VÓ°¢6öÆ÷#¢&v&#SRÃ#SRÃ#SRÃãCR°¢ÆæRÖVvC¢ãc°¢Ð ¢ò¢)H)HDôôÅ2ò4´ÄÅ2$")H)H¢ð¢7FööÇ2°¢&6¶w&÷VæC¢f"Ò×vFR°¢Ð¢çFööÇ2×&÷r°¢F7Æ¢fÆW²fÆW×w&¢w&²v¢G°¢§W7FgÖ6öçFVçC¢6VçFW#°¢Ð¢çFööÂÖ6°¢F7Æ¢fÆW²ÆvâÖFV×3¢6VçFW#²v¢°¢&6¶w&÷VæC¢f"ÒÖ7&VÒ°¢&÷&FW#¢6öÆB&v&RÃ#ÃCbÃã°¢&÷&FW"×&FW3¢°¢FFæs¢'#°¢föçB×6¦S¢ãG&VÓ°¢föçB×vVvC¢S°¢6öÆ÷#¢f"ÒÖæg°¢G&ç6Föã¢ÆÂã'3°¢Ð¢çFööÂÖ6¦÷fW"°¢&÷&FW"Ö6öÆ÷#¢f"ÒÖvöÆB°¢&÷×6F÷s¢f"Ò×6F÷r×6Ò°¢Ð¢çFööÂÖ6æF÷B°¢vGF¢w²VvC¢w°¢&÷&FW"×&FW3¢SS°¢&6¶w&÷VæC¢f"ÒÖvöÆB°¢Ð ¢ò¢)H)H4ôåD5B)H)H¢ð¢66öçF7B°¢&6¶w&÷VæC¢f"ÒÖæg°¢FWBÖÆvã¢6VçFW#°¢Ð¢æ6öçF7B×7V'FFÆR°¢föçB×6¦S¢ãw&VÓ°¢6öÆ÷#¢&v&#SRÃ#SRÃ#SRÃãSR°¢Ö×vGF¢Cc°¢Ö&vã¢WFòC°¢ÆæRÖVvC¢ãsS°¢Ð¢æ6öçF7BÖÆæ·2°¢F7Æ¢fÆW²v¢g²§W7FgÖ6öçFVçC¢6VçFW#²fÆW×w&¢w&°¢Ð ¢ò¢)H)HdôõDU")H)H¢ð¢fö÷FW"°¢&6¶w&÷VæC¢3c°¢FWBÖÆvã¢6VçFW#°¢FFæs¢##G°¢Ð¢fö÷FW"°¢föçB×6¦S¢ãs&VÓ°¢6öÆ÷#¢&v&#SRÃ#SRÃ#SRÃã#°¢ÆWGFW"×76æs¢ã6VÓ°¢Ð¢fö÷FW"°¢6öÆ÷#¢&v&#ÃcÃsbÃãb°¢FWBÖFV6÷&Föã¢æöæS°¢Ð¢fö÷FW"¦÷fW"²6öÆ÷#¢f"ÒÖvöÆB²Ð ¢ò¢)H)HäÔDôå2)H)H¢ð¢æfFR×W°¢÷6G¢°¢G&ç6f÷&Ó¢G&ç6ÆFU#G°¢G&ç6Föã¢÷6GãSW2V6RÂG&ç6f÷&ÒãSW2V6S°¢Ð¢æfFR×Wçf6&ÆR°¢÷6G¢°¢G&ç6f÷&Ó¢G&ç6ÆFU°¢Ð ¢ò¢)H)HÔô$ÄRäb)H)H¢ð¢ÖVFÖ×vGF¢C°¢ææbÖÆæ·2²F7Æ¢æöæS²Ð¢Ð¢Â÷7GÆSà£ÂöVCà£Æ&öGà £ÂÒÒäbÒÓà£Ææcà¢ÆFb6Æ73Ò&æbÖææW"#à¢Æ6Æ73Ò&æbÖÆövò"&VcÒ"6W&ò#äÔÂöà¢ÇVÂ6Æ73Ò&æbÖÆæ·2#à¢ÆÆãÆ&VcÒ"6&÷WB#ä&÷WCÂöãÂöÆà¢ÆÆãÆ&VcÒ"7&ö¦V7G2#å&ö¦V7G3ÂöãÂöÆà¢ÆÆãÆ&VcÒ"6WW'F6R#äWW'F6SÂöãÂöÆà¢ÆÆãÆ&VcÒ"7FööÇ2#å6¶ÆÇ3ÂöãÂöÆà¢ÆÆãÆ&VcÒ"66öçF7B#ä6öçF7CÂöãÂöÆà¢Â÷VÃà¢ÂöFcà£Âöæcà £ÂÒÒU$òÒÓà£Ç6V7FöâCÒ&W&ò#à¢ÆFb6Æ73Ò&W&òÖææW"#à¢ÆFb6Æ73Ò&W&òÖÆ&VÂ#äfææ6ÂæÇ7CÂöFcà¢Æ6Æ73Ò&W&òÖæÖR#äÖçÇ7ãäv'vÃÂ÷7ããÂöà¢Ç6Æ73Ò&W&ò×FFÆR#à¢fææ6ÂæÇ7BvFWW'F6RâFFÖG&fVâ&W÷'FærÂW6VÂÖ&6VBæÇF6Âg&ÖWv÷&·2ÂµF6&ö&G2ÂæBfææ6ÂÖöFVÆær7&÷72fææ6RFöÖç2à¢Â÷à¢ÆFb6Æ73Ò&W&ò×ÆÇ2#à¢Ç7â6Æ73Ò'ÆÂ#äfææ6Â&W÷'FæsÂ÷7ãà¢Ç7â6Æ73Ò'ÆÂ#äfææ6ÂÖöFVÆæsÂ÷7ãà¢Ç7â6Æ73Ò'ÆÂ#å÷vW"$Â÷7ãà¢Ç7â6Æ73Ò'ÆÂ#äW6VÂf×²d$Â÷7ãà¢Ç7â6Æ73Ò'ÆÂ#äFFæÇ63Â÷7ãà¢Ç7â6Æ73Ò'ÆÂ#åf&æ6RæÇ63Â÷7ãà¢Ç7â6Æ73Ò'ÆÂ#äF6&ö&BFW6vãÂ÷7ãà¢Ç7â6Æ73Ò'ÆÂ#ä76WBÖævVÖVçCÂ÷7ãà¢ÂöFcà¢ÆFb6Æ73Ò&W&òÖ7F#à¢Æ&VcÒ"7&ö¦V7G2"6Æ73Ò&'Fâ×&Ö'#à¢fWr6VÆV7FVBv÷&°¢Ç7frvGFÒ#B"VvCÒ#B"fÆÃÒ&æöæR"fWt&÷Ò##B#B"7G&ö¶SÒ&7W'&VçD6öÆ÷""7G&ö¶R×vGFÒ#"ãR#ãÇF7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"CÒ$ÓÂÓrrÓrÓr"óãÂ÷7fsà¢Âöà¢Æ&VcÒ&GG3¢òövFV"æ6öÒôÖçÔv'vÃR"F&vWCÒ%ö&Ææ²"&VÃÒ&æö÷VæW""6Æ73Ò&'FâÖ÷WFÆæR#à¢Ç7frvGFÒ#b"VvCÒ#b"fWt&÷Ò##B#B"fÆÃÒ&7W'&VçD6öÆ÷"#ãÇFCÒ$Ó"3Rã3rRã3r&3Rã32ãC3RãsRã#Rã3RãbãRã#RÒã#SRã#RÒãSrÒã#RÒãRÓã#2ÒãRÓ"ã#3RÓ2ãRãSSRÓ2ãsRÒãs3RÓBã3RÓãCÒã3RÒã3CRÒãs"ÓãCÓã#2ÓãcRÒãC"Òã##RÓã"ÒãsÒãRÒãsRãCRÒãRãc"ãrãCRã#2ããR"ãRã3R2ãCRããRÒãsãC"Óã3RãscRÓãcRÓ"ãcrÒã2ÓRãCbÓã33RÓRãCbÓRã#RÓã3RãCcRÓ"ã3Rã#2Ó2ã##RÒã"Òã2ÒãSBÓãS2ã"Ó2ããRÒã3R2ã2ã#2ãbÒã#rãÒãCR2ÒãCW3"ãBã3R2ãCV3"ã#RÓãSb2ã2Óã#22ã2Óã#2ãcbãcRã#B"ãã"2ããscRãBã#2ãRã#22ã##RBãcRÓ"ãRRãc#RÓRãCsRRã#RãC3Rã3sRããRã"ã#"ãcRÒãR"ãRÒãR2ã2ã3Rã##Rãcã#RãSt"ã""ã"#B&3Óbãc2ÓRã3rÓ"Ó"Ó'¢"óãÂ÷7fsà¢vDV ¢Âöà¢ÂöFcà¢ÂöFcà£Â÷6V7Föãà £ÂÒÒ$õUBÒÓà£Ç6V7FöâCÒ&&÷WB#à¢ÆFb6Æ73Ò'6V7FöâÖææW"#à¢Ç7â6Æ73Ò'6V7Föâ×Fr#ä&6¶w&÷VæCÂ÷7ãà¢ÆFb6Æ73Ò'6V7FöâÖFfFW"#ãÂöFcà¢Æ"6Æ73Ò'6V7FöâÖVFær#ä&÷WBÖSÂö#à¢ÆFb6Æ73Ò&&÷WBÖw&B#à¢ÆFb6Æ73Ò&&÷WB×FWBfFR×W#à¢Çà¢ÒÇ7G&öæsäfææ6ÂæÇ7CÂ÷7G&öæsâvFæG2ÖöâWW&Væ6R7&÷72&VÂW7FFRÂ76WBÖævVÖVçBÂæBfææ6Â&W÷'FærfÖF6²'VÆFærFRæÇF6Âæg&7G'V7GW&RFBVæ&ÆW2çfW7FÖVçBFV×2æB÷'FföÆòÖævW'2FòÖ¶RFFÖG&fVâFV66öç2vF6öæfFVæ6Rà¢Â÷à¢Çà¢×v÷&²7ç2Ç7G&öæsæfææ6ÂæB÷'FföÆòW&f÷&Öæ6R&W÷'FæsÂ÷7G&öæsâÂ&V7W'&ærµF6&ö&G2Âf&æ6RæÇ62Âfææ6ÂÖöFVÆærÂæB÷W&FöæÂæÇF72â×WW&Væ6Ræ6ÇVFW2&VçBw&÷wFÂö67Wæ7Â6öÆÆV7Föç2Â6WG&6¶ærÂæBÖ&¶WBæÇ62fÖF6²2vVÆÂ2'&öFW"fææ6R&W÷'FæræBG&VæBæÇ627&÷72æGW7G&W2à¢Â÷à¢Çà¢FWfVÆ÷7G'V7GW&VBW6VÂg&ÖWv÷&·2æB÷vW"$F6&ö&G2FW6væVBFò&RæÇF6ÆÇ&v÷&÷W2æB÷W&FöæÆÇ&7F6ÂfÖF6²'VÇBf÷"&WVF&ÆGÂ6Æ&GÂæB66Æ&ÆGà¢Â÷à¢ÆFb6Æ73Ò&6öæfFVçFÆGÖæ÷FR#à¢Ç7G&öæsäFFf×²6öæfFVçFÆG£Â÷7G&öæsâÆÂ&ö¦V7G2&W6VçFVBW&RW6RÖ6¶VBÂæöçÖ¦VBÂ÷"&W&W6VçFFfRFFÂ&÷fFVB6öÆVÇFòFVÖöç7G&FRæÇF6ÂÖWFöFöÆöwÂÖöFVÆær7G'V7GW&RÂ&W÷'Fær6&ÆFW2ÂæB&ö&ÆVÒ×6öÇfær&ö6âæò6öæfFVçFÂÂ&÷&WF'ÂFVæçBÖÆWfVÂÂ÷"6ÆVçBÖFVçFf&ÆRæf÷&ÖFöâ2æ6ÇVFVBà¢ÂöFcà¢ÂöFcà¢ÆFb6Æ73Ò&fFR×W"7GÆSÒ'G&ç6FöâÖFVÆ£ã'2#à¢ÆFb6Æ73Ò&&÷WB×7FG2#à¢ÆFb6Æ73Ò'7FBÖ6&B#à¢Ç7â6Æ73Ò'7FB×fÇVR#äW6VÃÂ÷7ãà¢Ç7â6Æ73Ò'7FBÖÆ&VÂ#å&Ö'ÖöFVÆærFööÃÂ÷7ãà¢ÂöFcà¢ÆFb6Æ73Ò'7FBÖ6&B#à¢Ç7â6Æ73Ò'7FB×fÇVR#å÷vW"$Â÷7ãà¢Ç7â6Æ73Ò'7FBÖÆ&VÂ#äF6&ö&B&W÷'FæsÂ÷7ãà¢ÂöFcà¢ÆFb6Æ73Ò'7FBÖ6&B#à¢Ç7â6Æ73Ò'7FB×fÇVR#ädÂ÷7ãà¢Ç7â6Æ73Ò'7FBÖÆ&VÂ#äfææ6ÂæÇ63Â÷7ãà¢ÂöFcà¢ÆFb6Æ73Ò'7FBÖ6&B#à¢Ç7â6Æ73Ò'7FB×fÇVR#äµÂ÷7ãà¢Ç7â6Æ73Ò'7FBÖÆ&VÂ#å÷'FföÆòæÇF73Â÷7ãà¢ÂöFcà¢ÂöFcà¢ÂöFcà¢ÂöFcà¢ÂöFcà£Â÷6V7Föãà £ÂÒÒ$ô¤T5E2ÒÓà£Ç6V7FöâCÒ'&ö¦V7G2#à¢ÆFb6Æ73Ò'6V7FöâÖææW"#à¢Ç7â6Æ73Ò'6V7Föâ×Fr#å6VÆV7FVBv÷&³Â÷7ãà¢ÆFb6Æ73Ò'6V7FöâÖFfFW"#ãÂöFcà¢Æ"6Æ73Ò'6V7FöâÖVFær#äfVGW&VB&ö¦V7G3Âö#à ¢ÆFb6Æ73Ò'&ö¦V7G2Öw&B#à ¢ÂÒÒ&ö¦V7B¢&VçBw&÷wFæÇ62ÒÓà¢ÆFb6Æ73Ò'&ö¦V7BÖ6&BfFR×W#à¢ÆFb6Æ73Ò'&ö¦V7B×&WfWr#à¢Ç7â6Æ73Ò'&ö¦V7BÖ&FvR#åv÷&BfÖFF÷C²W6VÃÂ÷7ãà¢Ç7frvGFÒ###"VvCÒ#"fWt&÷Ò###"fÆÃÒ&æöæR"ÖÆç3Ò&GG¢ò÷wwrçs2æ÷&ró#÷7fr#à¢ÆÆæRÒ##"Ò##"#Ò##"#Ò##"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢ÆÆæRÒ##"Ò#CR"#Ò##"#Ò#CR"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢ÆÆæRÒ##"Ò#s"#Ò##"#Ò#s"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢ÆÆæRÒ##"Ò#"#Ò##"#Ò#"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢ÇöÇÆæRöçG3Ò##RÃ"SRÃsRÃc"RÃCCRÃ3bsRÃ##Ã#""7G&ö¶SÒ'&v&#ÃcÃsbÃãR"7G&ö¶R×vGFÒ#"ãR"fÆÃÒ&æöæR"7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"óà¢ÇöÇÆæRöçG3Ò##RÃ"SRÃsRÃc"RÃCCRÃ3bsRÃ##Ã#""7G&ö¶SÒ'&v&#ÃcÃsbÃã""7G&ö¶R×vGFÒ#""fÆÃÒ&æöæR"7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"óà¢Æ6&6ÆR7Ò##R"7Ò#""#Ò#B"fÆÃÒ'&v&#ÃcÃsbÃã"óà¢Æ6&6ÆR7Ò#R"7Ò#c""#Ò#B"fÆÃÒ'&v&#ÃcÃsbÃã"óà¢Æ6&6ÆR7Ò#CR"7Ò#3b"#Ò#B"fÆÃÒ'&v&#ÃcÃsbÃã"óà¢Æ6&6ÆR7Ò##"7Ò##""#Ò#B"fÆÃÒ'&v&#ÃcÃsbÃã"óà¢ÆÆæRÒ##"Ò#"#Ò##"#Ò#"7G&ö¶SÒ'&v&#SRÃ#SRÃ#SRÃã2"7G&ö¶R×vGFÒ#ãR"óà¢Â÷7fsà¢ÂöFcà¢ÆFb6Æ73Ò'&ö¦V7BÖ&öG#à¢ÆFb6Æ73Ò'&ö¦V7BÖ6FVv÷'#å&VçBæÇ62fÖFF÷C²Ö&¶WB&W6V&6ÂöFcà¢Æ26Æ73Ò'&ö¦V7B×FFÆR#å&VçBw&÷wFæÇ63Âö3à¢Ç6Æ73Ò'&ö¦V7BÖFW62#à¢FWFÆVBFö7VÖVçFFöâöb&VçBw&÷wFæÇ62ÖWFöFöÆöwÂ6÷fW&ærFR6ö×ÆWFRv÷&¶ærÆöv2&VæBâW6VÂÖ&6VBæÇF6ÂFV×ÆFRâWÆç2FFçWG2Â6Æ7VÆFöâg&ÖWv÷&·2ÂG&VæBçFW'&WFFöâÂæB&W÷'Fær÷WGWG2W6VBFò76W72&VçBw&÷wFGFW&ç27&÷72÷'FföÆòà¢Â÷à¢ÆFb6Æ73Ò'&ö¦V7B×FööÇ2#à¢Ç7â6Æ73Ò'FööÂ×Fr#åv÷&CÂ÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#äW6VÃÂ÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#å&VçBæÇF73Â÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#äfææ6Â&W÷'FæsÂ÷7ãà¢ÂöFcà¢Æ&VcÒ&GG3¢òövFV"æ6öÒôÖçÔv'vÃRôfææ6ÂÕ&ö¦V7G2"F&vWCÒ%ö&Ææ²"&VÃÒ&æö÷VæW""6Æ73Ò'&ö¦V7BÖÆæ²#à¢fWröâvDV ¢Ç7frvGFÒ#2"VvCÒ#2"fÆÃÒ&æöæR"fWt&÷Ò##B#B"7G&ö¶SÒ&7W'&VçD6öÆ÷""7G&ö¶R×vGFÒ#"ãR#ãÇF7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"CÒ$ÓrÃBFÓÂÓBFÓBÓD2"óãÂ÷7fsà¢Âöà¢ÂöFcà¢ÂöFcà ¦GFÒ#"óà¢ÇöÇÆæRöçG3Ò##RÃ"SRÃsRÃc"RÃCCRÃ3bsRÃ##Ã#""7G&ö¶SÒ'&v&#ÃcÃsbÃãR"7G&ö¶R×vGFÒ#"ãR"fÆÃÒ&æöæR"7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"óà¢ÇöÇÆæRöçG3Ò##RÃ"SRÃsRÃc"RÃCCRÃ3bsRÃ##Ã#""7G&ö¶SÒ'&v&#ÃcÃsbÃã""7G&ö¶R×vGFÒ#""fÆÃÒ&æöæR"7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"óà¢Æ6&6ÆR7Ò##R"7Ò#""#Ò#B"fÆÃÒ'&v&#ÃcÃsbÃã"óà¢Æ6&6ÆR7Ò#R"7Ò#c""#Ò#B"fÆÃÒ'&v&#ÃcÃsbÃã"óà¢Æ6&6ÆR7Ò#CR"7Ò#3b"#Ò#B"fÆÃÒ'&v&#ÃcÃsbÃã"óà¢Æ6&6ÆR7Ò##"7Ò##""#Ò#B"fÆÃÒ'&v&#ÃcÃsbÃã"óà¢ÆÆæRÒ##"Ò#"#Ò##"#Ò#"7G&ö¶SÒ'&v&#SRÃ#SRÃ#SRÃã2"7G&ö¶R×vGFÒ#ãR"óà¢Â÷7fsà¢ÂöFcà¢ÆFb6Æ73Ò'&ö¦V7BÖ&öG#à¢ÆFb6Æ73Ò'&ö¦V7BÖ6FVv÷'#å&VçBæÇ62fÖFF÷C²Ö&¶WB&W6V&6ÂöFcà¢Æ26Æ73Ò'&ö¦V7B×FFÆR#å&VçBw&÷wFæÇ63Âö3à¢Ç6Æ73Ò'&ö¦V7BÖFW62#à¢FWFÆVBFö7VÖVçFFöâöb&VçBw&÷wFæÇ62ÖWFöFöÆöwÂ6÷fW&ærFR6ö×ÆWFRv÷&¶ærÆöv2&VæBâW6VÂÖ&6VBæÇF6ÂFV×ÆFRâWÆç2FFçWG2Â6Æ7VÆFöâg&ÖWv÷&·2ÂG&VæBçFW'&WFFöâÂæB&W÷'Fær÷WGWG2W6VBFò76W72&VçBw&÷wFGFW&ç27&÷72÷'FföÆòà¢Â÷à¢ÆFb6Æ73Ò'&ö¦V7B×FööÇ2#à¢Ç7â6Æ73Ò'FööÂ×Fr#åv÷&CÂ÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#äW6VÃÂ÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#å&VçBæÇF73Â÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#äfææ6Â&W÷'FæsÂ÷7ãà¢ÂöFcà¢Æ&VcÒ&GG3¢òövFV"æ6öÒôÖçÔv'vÃRôfææ6ÂÕ&ö¦V7G2"F&vWCÒ%ö&Ææ²"&VÃÒ&æö÷VæW""6Æ73Ò'&ö¦V7BÖÆæ²#à¢fWröâvDV ¢Ç7frvGFÒ#2"VvCÒ#2"fÆÃÒ&æöæR"fWt&÷Ò##B#B"7G&ö¶SÒ&7W'&VçD6öÆ÷""7G&ö¶R×vGFÒ#"ãR#ãÇF7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"CÒ$ÓrÃBFÓÂÓBFÓBÓD2"óãÂ÷7fsà¢Âöà¢ÂöFcà¢ÂöFcà ¢ÂÒÒ&ö¦V7B#¢FööÂ6öÆÆV7Föç2G&VæBæÇ62ÒÓà¢ÆFb6Æ73Ò'&ö¦V7BÖ6&BfFR×W"7GÆSÒ'G&ç6FöâÖFVÆ£ã2#à¢ÆFb6Æ73Ò'&ö¦V7B×&WfWr#à¢Ç7â6Æ73Ò'&ö¦V7BÖ&FvR#åv÷&BfÖFF÷C²W6VÃÂ÷7ãà¢Ç7frvGFÒ###"VvCÒ#"fWt&÷Ò###"fÆÃÒ&æöæR"ÖÆç3Ò&GG¢ò÷wwrçs2æ÷&ró#÷7fr#à¢ÆÆæRÒ##"Ò##"#Ò##"#Ò##"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢ÆÆæRÒ##"Ò#CR"#Ò##"#Ò#CR"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢ÆÆæRÒ##"Ò#s"#Ò##"#Ò#s"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢Ç&V7BÒ##"Ò#SR"vGFÒ#B"VvCÒ#3R"'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#CB"Ò#3"vGFÒ#B"VvCÒ#S""'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#c"Ò#C"vGFÒ#B"VvCÒ#C""'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#B"Ò##"vGFÒ#B"VvCÒ#c""'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#"Ò#C""vGFÒ#B"VvCÒ#C"'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ##B"Ò##""vGFÒ#B"VvCÒ#c"'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#C"Ò#3R"vGFÒ#B"VvCÒ#SR"'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#cB"Ò#"vGFÒ#B"VvCÒ#s""'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢ÆÆæRÒ##"Ò#"#Ò##"#Ò#"7G&ö¶SÒ'&v&#SRÃ#SRÃ#SRÃã2"7G&ö¶R×vGFÒ#ãR"óà¢Â÷7fsà¢ÂöFcà¢ÆFb6Æ73Ò'&ö¦V7BÖ&öG#à¢ÆFb6Æ73Ò'&ö¦V7BÖ6FVv÷'#åG&VæBæÇ62fÖFF÷C²FV6æöÆöwfææ6SÂöFcà¢Æ26Æ73Ò'&ö¦V7B×FFÆR#äFööÂ6öÆÆV7Föç2G&VæBæÇ63Âö3à¢Ç6Æ73Ò'&ö¦V7BÖFW62#à¢æÇ62öbG&VæG2âFööÂF÷FöâæB6öÆÆV7Föç2W&f÷&Öæ6RÂFW&fVBg&öÒâW6VÂFF6WBâFö7VÖVçG2FRæÇF6Â&ö6Â¶WÖWG&72G&6¶VBÂG&VæBGFW&ç2FVçFfVBÂæBç6vG2öâw&÷wFG&¦V7F÷&W27&÷72FööÂ6FVv÷&W2à¢Â÷à¢ÆFb6Æ73Ò'&ö¦V7B×FööÇ2#à¢Ç7â6Æ73Ò'FööÂ×Fr#åv÷&CÂ÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#äW6VÃÂ÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#åG&VæBæÇ63Â÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#äFFæÇF73Â÷7ãà¢ÂöFcà¢Æ&VcÒ&GG3¢òövFV"æ6öÒôÖçÔv'vÃRôfææ6ÂÕ&ö¦V7G2"F&vWCÒ%ö&Ææ²"&VÃÒ&æö÷VæW""6Æ73Ò'&ö¦V7BÖÆæ²#à¢fWröâvDV ¢Ç7frvGFÒ#2"VvCÒ#2"fÆÃÒ&æöæR"fWt&÷Ò##B#B"7G&ö¶SÒ&7W'&VçD6öÆ÷""7G&ö¶R×vGFÒ#"ãR#ãÇF7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"CÒ$ÓrÃBFÓÂÓBFÓBÓD2"óãÂ÷7fsà¢Âöà¢ÂöFcà¢ÂöFcà ¢ÂÒÒ&ö¦V7B3¢7F&Æ¦VBf6çBVæG2G&6¶W"ÒÓà¢ÆFb6Æ73Ò'&ö¦V7BÖ6&BfFR×W"7GÆSÒ'G&ç6FöâÖFVÆ£ã'2#à¢ÆFb6Æ73Ò'&ö¦V7B×&WfWr#à¢Ç7â6Æ73Ò'&ö¦V7BÖ&FvR#äW6VÂfÖFF÷C²gVæBÔÆWfVÃÂ÷7ãà¢Ç7frvGFÒ###"VvCÒ#"fWt&÷Ò###"fÆÃÒ&æöæR"ÖÆç3Ò&GG¢ò÷wwrçs2æ÷&ró#÷7fr#à¢ÆÆæRÒ##"Ò##"#Ò##"#Ò##"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢ÆÆæRÒ##"Ò#CR"#Ò##"#Ò#CR"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢ÆÆæRÒ##"Ò#s"#Ò##"#Ò#s"7G&ö¶SÒ'&v&#ÃcÃsbÃã"7G&ö¶R×vGFÒ#"óà¢Ç&V7BÒ#3"Ò#3"vGFÒ#"VvCÒ#S""'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#c"Ò##"vGFÒ#"VvCÒ#c""'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#"Ò#3B"vGFÒ#"VvCÒ#Sb"'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ##"Ò##""vGFÒ#"VvCÒ#c"'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#S"Ò#3"vGFÒ#"VvCÒ#c"'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#"Ò#C""vGFÒ#"VvCÒ#C"'Ò#""fÆÃÒ'&v&#ÃcÃsbÃãR"óà¢Ç&V7BÒ#3"Ò#s"vGFÒ#"VvCÒ#""'Ò#""fÆÃÒ'&v&#SRÃ#SRÃ#SRÃã"óà¢Ç&V7BÒ#c"Ò#""vGFÒ#"VvCÒ#"'Ò#""fÆÃÒ'&v&#SRÃ#SRÃ#SRÃã"óà¢Ç&V7BÒ#"Ò#"vGFÒ#"VvCÒ#"'Ò#""fÆÃÒ'&v&#SRÃ#SRÃ#SRÃã"óà¢Ç&V7BÒ##"Ò#B"vGFÒ#"VvCÒ#b"'Ò#""fÆÃÒ'&v&#SRÃ#SRÃ#SRÃã"óà¢Ç&V7BÒ#S"Ò#""vGFÒ#"VvCÒ#"'Ò#""fÆÃÒ'&v&#SRÃ#SRÃ#SRÃã"óà¢Ç&V7BÒ#"Ò#sb"vGFÒ#"VvCÒ#B"'Ò#""fÆÃÒ'&v&#SRÃ#SRÃ#SRÃã"óà¢ÆÆæRÒ##"Ò#"#Ò##"#Ò#"7G&ö¶SÒ'&v&#SRÃ#SRÃ#SRÃã2"7G&ö¶R×vGFÒ#ãR"óà¢Â÷7fsà¢ÂöFcà¢ÆFb6Æ73Ò'&ö¦V7BÖ&öG#à¢ÆFb6Æ73Ò'&ö¦V7BÖ6FVv÷'#å÷'FföÆòW&f÷&Öæ6RfÖFF÷C²ö67Wæ7æÇF73ÂöFcà¢Æ26Æ73Ò'&ö¦V7B×FFÆR#å7F&Æ¦VBf6çBVæG2G&6¶W"fÖF6²gVæBÆWfVÃÂö3à¢Ç6Æ73Ò'&ö¦V7BÖFW62#à¢gVæBÖÆWfVÂG&6¶W"ÖöæF÷&ær7F&Æ¦VBfW'7W2f6çBVæB6÷VçG27&÷72÷'FföÆòâ&÷fFW26öç6öÆFFVBfWröbö67Wæ77FGW2ÂVæ&Æær76WBÖævW'2FòFVçFgf6æ7G&VæG2ÂG&6²7F&Æ¦FöâFÖVÆæW2ÂæB7W÷'B÷'FföÆòÖÆWfVÂ&W÷'FæræBFV66öâÖÖ¶ærà¢Â÷à¢ÆFb6Æ73Ò'&ö¦V7B×FööÇ2#à¢Ç7â6Æ73Ò'FööÂ×Fr#äW6VÃÂ÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#ägVæBÔÆWfVÂ&W÷'FæsÂ÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#äö67Wæ7æÇF73Â÷7ãà¢Ç7â6Æ73Ò'FööÂ×Fr#å÷'FföÆòG&6¶æsÂ÷7ãà¢ÂöFcà¢Æ&VcÒ&GG3¢òövFV"æ6öÒôÖçÔv'vÃRôfææ6ÂÕ&ö¦V7G2ö&Æö"öÖâõ7F&Æ¦VBS#f6çBS#VæG2S#G&6¶W%ôgVæBS#ÆWfVÂçÇ7"F&vWCÒ%ö&Ææ²"&VÃÒ&æö÷VæW""6Æ73Ò'&ö¦V7BÖÆæ²#à¢fWröâvDV ¢Ç7frvGFÒ#2"VvCÒ#2"fÆÃÒ&æöæR"fWt&÷Ò##B#B"7G&ö¶SÒ&7W'&VçD6öÆ÷""7G&ö¶R×vGFÒ#"ãR#ãÇF7G&ö¶RÖÆæV6Ò'&÷VæB"7G&ö¶RÖÆæV¦öãÒ'&÷VæB"CÒ$ÓrÃBFÓÂÓBFÓBÓD2"óãÂ÷7fsà¢Âöà¢ÂöFcà¢ÂöFcà ¢ÂöFcãÂÒÒ÷&ö¦V7G2Öw&BÒÓà¢ÂöFcà£Â÷6V7Föãà§a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    @media (max-width: 600px) {
+      .nav-links { gap: 18px; }
+      .nav-links a { font-size: 0.75rem; }
+    }
 
-<!-- EXPERTISE -->
-<section id="expertise">
-  <div class="section-inner">
-    <span class="section-tag" style="color:var(--gold)">Analytical Coverage</span>
-    <div class="section-divider"></div>
-    <h2 class="section-heading light">Areas of Expertise</h2>
-    <div class="expertise-grid">
+    /* -- HERO -- */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(145deg, var(--navy) 0%, var(--navy-mid) 55%, #1a2d4a 100%);
+      display: flex; align-items: center;
+      padding: 100px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 700px 500px at 80% 40%, rgba(201,168,76,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 400px 400px at 10% 80%, rgba(201,168,76,0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    /* subtle grid overlay */
+    #hero::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1100px; margin: 0 auto; width: 100%;
+      position: relative; z-index: 1;
+    }
+    .hero-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 32px;
+    }
+    .hero-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+    .hero-name span { color: var(--gold); }
+    .hero-title {
+      font-size: clamp(1rem, 2.2vw, 1.22rem);
+      color: rgba(255,255,255,0.65);
+      font-weight: 300;
+      margin-bottom: 36px;
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .hero-pills {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 48px;
+    }
+    .pill {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.7);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 7px 16px;
+      border-radius: 100px;
+      transition: all 0.2s;
+    }
+    .pill:hover {
+      background: rgba(201,168,76,0.12);
+      border-color: rgba(201,168,76,0.3);
+      color: var(--gold-light);
+    }
+    .hero-cta {
+      display: flex; gap: 16px; flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(201,168,76,0.3);
+    }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent;
+      color: rgba(255,255,255,0.8);
+      font-weight: 500;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      padding: 13px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.2s;
+    }
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      transform: translateY(-1px);
+    }
 
-      <div class="expertise-card fade-up">
-        <div class="expertise-icon">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-        </div>
-        <div class="expertise-name">Portfolio &amp; Property Performance Reporting</div>
-        <div class="expertise-desc">Recurring KPI dashboards and performance summaries at fund and property levels.</div>
-      </div>
+    /* -- DIVIDER -- */
+    .section-divider {
+      width: 48px; height: 3px;
+      background: var(--gold);
+      margin: 0 auto 20px;
+      border-radius: 2px;
+    }
 
-      <div class="expertise-card fade-up" style="transition-delay:0.05s">
-        <div class="expertise-icon">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0h-8m0-8l-8 8-4-4-6 6"/></svg>
-        </div>
-        <div class="expertise-name">Rent Growth &amp; Occupancy Analysis</div>
-        <div class="expertise-desc">Property-level rent trend tracking, occupancy benchmarking, and market positioning.</div>
-      </div>
+    /* -- SECTION COMMON -- */
+    section {
+      padding: 96px 24px;
+    }
+    .section-inner {
+      max-width: 1100px; margin: 0 auto;
+    }
+    .section-tag {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .section-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 60px;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    .section-heading.light { color: var(--white); }
 
-      <div class="expertise-card fade-up" style="transition-delay:0.10s">
-        <div class="expertise-icon">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        </div>
-        <div class="expertise-name">Lease Expiration &amp; Renewal Analysis</div>
-        <div class="expertise-desc">Expiration schedule modeling, renewal probability analysis, and rollover risk assessment.</div>
-      </div>
+    /* -- ABOUT -- */
+    #about {
+      background: var(--white);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+    .about-text p {
+      color: var(--slate);
+      font-size: 0.97rem;
+      margin-bottom: 18px;
+      line-height: 1.8;
+    }
+    .about-text p:last-child { margin-bottom: 0; }
+    .about-text strong { color: var(--navy); font-weight: 600; }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .stat-card {
+      background: var(--cream);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .stat-card .stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .stat-card .stat-label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--slate-light);
+      text-transform: uppercase;
+    }
+    .confidentiality-note {
+      margin-top: 28px;
+      padding: 16px 20px;
+      background: rgba(201,168,76,0.06);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      font-size: 0.82rem;
+      color: var(--slate);
+      line-height: 1.65;
+    }
 
-      <div class="expertise-card fade-up" style="transition-delay:0.15s">
-        <div class="expertise-icon">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
-        </div>
-        <div class="expertise-name">Collections &amp; AR Analysis</div>
-        <div class="expertise-desc">Accounts receivable aging, collection rate tracking, and delinquency trend reporting.</div>
-      </div>
+    /* -- PROJECTS -- */
+    #projects {
+      background: var(--cream);
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .project-card {
+      background: var(--white);
+      border: 1px solid rgba(15,28,46,0.07);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s;
+      position: relative;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(15,28,46,0.12);
+    }
+    .project-card.coming-soon {
+      opacity: 0.65;
+      pointer-events: none;
+    }
+    .project-preview {
+      height: 180px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Mini chart preview for project card */
+    .project-preview svg {
+      opacity: 0.9;
+    }
+    .project-badge {
+      position: absolute; top: 14px; right: 14px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 100px;
+      color: var(--navy);
+      background: var(--gold);
+    }
+    .project-badge.soon {
+      background: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.6);
+    }
+    .project-body {
+      padding: 28px;
+    }
+    .project-category {
+      font-size: 0.68rem;
+      font-weight: 600;
+]\\ÜXÚ[ÎM[NÂ^][ÙÜN\\Ø\ÙNÂÛÛÜ\KYÛÛ
+NÂX\Ú[XÝÛNLÂBÚXÝ]]HÂÛY[Z[N	Ô^YZ\\Ü^IËÙ\YÂÛ\Ú^NK[NÂÛ]ÙZYÚ
+ÂÛÛÜ\K[]JNÂX\Ú[XÝÛNLÂ[KZZYÚKÎÂBÚXÝY\ØÈÂÛ\Ú^N
+Í\[NÂÛÛÜ\K\Û]JNÂ[KZZYÚKÍNÂX\Ú[XÝÛNÂBÚXÝ]ÛÛÈÂ\Ü^N^È^]Ü\Ü\ÈØ\
+ÜÂX\Ú[XÝÛNÂBÛÛ]YÈÂÛ\Ú^NÜ[NÂÛ]ÙZYÚ
+LÂÛÛÜ\K[]JNÂXÚÙÜÝ[ØJMK
 
-      <div class="expertise-card fade-up" style="transition-delay:0.20s">
-        <div class="expertise-icon">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h"4"/></svg>
-        </div>
-        <div class="expertise-name">CapEx &amp; Renovation Tracking</div>
-        <div class="expertise-desc">Capital expenditure budgeting, project-level cost tracking, and renovation ROI analysis.</div>
-      </div>
+
+NÂY[Î
+L\ÂÜ\\Y]\Î
+Â]\\ÜXÚ[ÎÙ[NÂBÚXÝ[[ÈÂ\Ü^N[[KY^È[YÛZ][\ÎÙ[\ÈØ\
+ÂÛ\Ú^N[NÂÛ]ÙZYÚ
+ÂÛÛÜ\KYÛÛ
+NÂ^YXÛÜ][ÛÛNÂ]\\ÜXÚ[Î
+[NÂ[Ú][ÛØ\ÎÂBÚXÝ[[ÎÝ\ÈØ\LÈBÚXÝ[[ÈÝÈÈ^\Ú[ÎÈBÊKHVTTÑHKH
+ÂÙ^\\ÙHÂXÚÙÜÝ[\K[]JNÂB^\\ÙKYÜYÂ\Ü^NÜYÂÜY][\]KXÛÛ[[Î\X]
+]]ËY[Z[X^
+YJNÂØ\ÂB^\\ÙKXØ\ÂXÚÙÜÝ[ØJMKMKMK
+NÂÜ\\ÛÛYØJKM
+ÍLNÂÜ\\Y]\ÎÂY[ÎÂ[Ú][Û[\ÎÂB^\\ÙKXØ\Ý\ÂXÚÙÜÝ[ØJKM
+Í
+ÊNÂÜ\XÛÛÜØJKM
+Í
+NÂ[ÙÜN[Û]VJL
+NÂB^\\ÙKZXÛÛÂÚY
+ÈZYÚ
+ÂXÚÙÜÝ[ØJKM
+ÍLNÂÜ\\Y]\ÎÂ\Ü^N^È[YÛZ][\ÎÙ[\È\ÝYKXÛÛ[Ù[\ÂX\Ú[XÝÛNMÂÛÛÜ\KYÛÛ
+NÂÛ\Ú^NK\[NÂB^\\ÙK[[YHÂÛ\Ú^N[NÂÛ]ÙZYÚ
+ÂÛÛÜ\K]Ú]JNÂX\Ú[XÝÛNÂ[KZZYÚKÎÂB^\\ÙKY\ØÈÂÛ\Ú^NÎ[NÂÛÛÜØJMKMKMK
+JNÂ[KZZYÚKÂBÊKHÓÓÈÈÒÒSÈTKH
+ÂÝÛÛÈÂXÚÙÜÝ[\K]Ú]JNÂBÛÛË\ÝÈÂ\Ü^N^È^]Ü\Ü\ÈØ\MÂ\ÝYKXÛÛ[Ù[\ÂBÛÛXÚ\Â\Ü^N^È[YÛZ][\ÎÙ[\ÈØ\LÂXÚÙÜÝ[\KXÜX[JNÂÜ\\ÛÛYØJMK
 
-      <div class="expertise-card fade-up" style="transition-delay:0.25s">
-        <div class="expertise-icon">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
-        <div class="expertise-name">ESG / Energy &amp; Water Analysis</div>
-        <div class="expertise-desc">Sustainability KPI tracking, energy and water consumption benchmarking, and ESG reporting.</div>
-      </div>
+
+NÂÜ\\Y]\ÎÂY[ÎLÂÛ\Ú^N
+[NÂÛ]ÙZYÚ
+LÂÛÛÜ\K[]JNÂ[Ú][Û[ÎÂBÛÛXÚ\Ý\ÂÜ\XÛÛÜ\KYÛÛ
+NÂÞ\ÚYÝÎ\K\ÚYÝË\ÛJNÂBÛÛXÚ\ÝÂÚY
+ÜÈZYÚ
+ÜÂÜ\\Y]\Î
+L	NÂXÚÙÜÝ[\KYÛÛ
+NÂBÊKHÓÓPÕKH
+ÂØÛÛXÝÂXÚÙÜÝ[\K[]JNÂ^X[YÛÙ[\ÂBÛÛXÝ\ÝX]HÂÛ\Ú^NMÜ[NÂÛÛÜØJMKMKMKMJNÂX^]ÚY
 
-      <div class="expertise-card fade-up" style="transition-delay:0.30s">
-        <div class="expertise-icon">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 12l5-5m0 0l5-5m-5 5l-5 5m5-5l5 5"/></svg>
-        </div>
-        <div class="expertise-name">Budget vs. Actual Variance Analysis</div>
-        <div class="expertise-desc">Monthly and quarterly budget variance reporting with driver analysis and executive summaries.</div>
-      </div>
+ÂX\Ú[]]È
+Â[KZZYÚKÍNÂBÛÛXÝ[[ÜÈÂ\Ü^N^ÈØ\MÈ\ÝYKXÛÛ[Ù[\È^]Ü\Ü\ÂBÊKHÓÕTKH
+ÂÛÝ\ÂXÚÙÜÝ[ÌXNÂ^X[YÛÙ[\ÂY[ÎÂBÛÝ\ÂÛ\Ú^NÎ[NÂÛÛÜØJMKMKMK
+NÂ]\\ÜXÚ[ÎÙ[NÂBÛÝ\HÂÛÛÜØJKM
+ÍNÂ^YXÛÜ][ÛÛNÂBÛÝ\NÝ\ÈÛÛÜ\KYÛÛ
+NÈBÊKHSSPUSÓÈKH
+ÂYK]\ÂÜXÚ]NÂ[ÙÜN[Û]VJ
+NÂ[Ú][ÛÜXÚ]HM\ÈX\ÙK[ÙÜHM\ÈX\ÙNÂBYK]\\ÚXHÂÜXÚ]NNÂ[ÙÜN[Û]VJ
+NÂBÊKHSÐSHUKH
+ÂYYXH
+X^]ÚY
+
+HÂ][[ÜÈÈ\Ü^NÛNÈBBÜÝ[OÚXYÙOKKHUKO]]Û\ÜÏH]Z[\HÛ\ÜÏH][ÙÛÈYHÚ\ÈPOØO[Û\ÜÏH][[ÜÈOHYHØXÝ]XÝ]ØOÛOOHYHÜÚXÝÈÚXÝÏØOÛOOHYHÙ^\\ÙH^\\ÙOØOÛOOHYHÝÛÛÈÚÚ[ÏØOÛOOHYHØÛÛXÝÛÛXÝØOÛOÝ[Ù]Û]KKHTÈKOÙXÝ[ÛYH\È]Û\ÜÏH\ËZ[\]Û\ÜÏH\Ë[X[[[ÚX[[[\ÝÙ]HÛ\ÜÏH\Ë[[YHX[XHÜ[YØ\Ø[ÜÜ[ÚOÛ\ÜÏH\Ë]]H[[ÚX[[[\ÝÚ]^\\ÙH[]KY][\Ü[Ë^Ù[X\ÙY[[]XØ[[Y]ÛÜÜËÔH\ÚØ\Ë[[[ÚX[[Ù[[ÈXÜÜÜÈ[[ÙHÛXZ[ËÜ]Û\ÜÏH\Ë\[ÈÜ[Û\ÜÏH[[[ÚX[\Ü[ÏÜÜ[Ü[Û\ÜÏH[[[ÚX[[Ù[[ÏÜÜ[Ü[Û\ÜÏH[ÝÙ\OÜÜ[Ü[Û\ÜÏH[^Ù[	[\ÈOÜÜ[Ü[Û\ÜÏH[]H[[\Ú\ÏÜÜ[Ü[Û\ÜÏH[\X[ÙH[[\Ú\ÏÜÜ[Ü[Û\ÜÏH[\ÚØ\\ÚYÛÜÜ[Ü[Û\ÜÏH[\ÜÙ]X[YÙ[Y[ÜÜ[Ù]]Û\ÜÏH\ËXÝHHYHÜÚXÝÈÛ\ÜÏH\[X\HY]ÈÙ[XÝYÛÜÂÝÈÚYHMZYÚHM[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHH]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLNH[MÈ
+ËMËMÈÏÜÝÏØOHYHÎËÙÚ]XÛÛKÓX[XKPYØ\Ø[MH\Ù]HØ[È[HÛÜ[\Û\ÜÏH[Ý][HÝÈÚYHMZYÚHMY]ÐÞH[HÝ\[ÛÛÜ]HLLÍKÍÈ
+KÍÈLÌ
+KÌHËÍHKÎMH
+HLKÎ
+KL
+KKKMKKKMÈK
+KKMKLKËKMKLÍKLËMKMMKLËÎMKKÌÍKMÍKLKKKLÍKKÍ
+KKÌLKKLKËLKMKKKKLKKÎKMKKÎMKM
+KKMHK
+ÈK
 
-      <div class="expertise-card fade-up" style="transition-delay:0.35s">
-        <div class="expertise-icon">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v1a3 3 0 006 0v-1m-6 0H6a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2h-3m0-4l-4 4-4-4h3v-4h2v4h3z"/></svg>
-        </div>
-        <div class="expertise-name">Data Visualization &amp; Dashboard Design</div>
-        <div class="expertise-desc">Interactive Power BI dashboards and Excel-based visualizations built for executive reporting.</div>
-      </div>
+HKÈKKMH
+HKÌ
+HËMKNKL
+KKÎLKÌ
+KÍKLK
+KLËKËMK
+LKÌÍKMK
+MKLHLKÌ
+K
+KLÎ
+HKËLËKKLKËKMLKLËLLËNK
+KKÌMHËÈKËMKÈKNK
+HËK
+\Ì
+LÍHÈ
+XÌMKLKMËËLKÈËËLKËKKLËNÍK
+KÈKL
+HKÈËH
+
+KL
+H
+KKMK
+ÍH
+KLKÍKÍÍKHKMKHK
+KKMHMKKMHËÈÌMKKKKMÐLLLLÌMËMKÍËLLLLLLÏÜÝÏÚ]XØOÙ]Ù]ÜÙXÝ[ÛKKHPÕUKOÙXÝ[ÛYHXÝ]]Û\ÜÏHÙXÝ[ÛZ[\Ü[Û\ÜÏHÙXÝ[Û]YÈXÚÙÜÝ[ÜÜ[]Û\ÜÏHÙXÝ[ÛY]Y\Ù]Û\ÜÏHÙXÝ[ÛZXY[ÈXÝ]YOÚ]Û\ÜÏHXÝ]YÜY]Û\ÜÏHXÝ]]^YK]\H[HHÝÛÏ[[ÚX[[[\ÝÜÝÛÏÚ][Ë[Û^\Y[ÙHXÜÜÜÈX[\Ý]K\ÜÙ]X[YÙ[Y[[[[ÚX[\Ü[È	Y\ÚÈZ[[ÈH[[]XØ[[\ÝXÝ\H][X\È[\ÝY[X[\È[ÜÛ[ÈX[YÙ\ÈÈXZÙH]KY][XÚ\Ú[ÛÈÚ]ÛÛY[ÙKÜ^HÛÜÈÜ[ÈÝÛÏ[[ÚX[[ÜÛ[È\ÜX[ÙH\Ü[ÏÜÝÛÏXÝ\[ÈÔH\ÚØ\Ë\X[ÙH[[\Ú\Ë[[ÚX[[Ù[[Ë[Ü\][Û[[[]XÜË^H^\Y[ÙH[ÛY\È[ÜÝÝØØÝ\[ÞKÛÛXÝ[ÛËØ\^XÚÚ[Ë[X\Ù][[\Ú\È	Y\ÚÈ\ÈÙ[\ÈØY\[[ÙH\Ü[È[[[[\Ú\ÈXÜÜÜÈ[\ÝY\ËÜH][ÜÝXÝ\Y^Ù[[Y]ÛÜÜÈ[ÝÙ\H\ÚØ\È\ÚYÛYÈH[[]XØ[HYÛÜÝ\È[Ü\][Û[HXÝXØ[	Y\ÚÈZ[Ü\X]X[]KÛ\]K[ØØ[X[]KÜ]Û\ÜÏHÛÛY[X[]K[ÝHÝÛÏ]H	[\ÈÛÛY[X[]NÜÝÛÏ[ÚXÝÈ\Ù[Y\H\ÙHX\ÚÙY[Û[Z^YÜ\\Ù[]]H]KÝYYÛÛ[HÈ[[ÛÝ]H[[]XØ[Y]ÙÛÙÞK[Ù[[ÈÝXÝ\K\Ü[ÈØ\X[]Y\Ë[Ø[K\ÛÛ[È\ØXÚÈÛÛY[X[ÜY]\K[[[][ÜÛY[ZY[YXXH[ÜX][Û\È[ÛYYÙ]Ù]]Û\ÜÏHYK]\Ý[OH[Ú][ÛY[^NLÈ]Û\ÜÏHXÝ]\Ý]È]Û\ÜÏHÝ]XØ\Ü[Û\ÜÏHÝ]][YH^Ù[ÜÜ[Ü[Û\ÜÏHÝ][X[[X\H[Ù[[ÈÛÛÜÜ[Ù]]Û\ÜÏHÝ]XØ\Ü[Û\ÜÏHÝ]][YHÝÙ\OÜÜ[Ü[Û\ÜÏHÝ][X[\ÚØ\\Ü[ÏÜÜ[Ù]]Û\ÜÏHÝ]XØ\Ü[Û\ÜÏHÝ]][YHOÜÜ[Ü[Û\ÜÏHÝ][X[[[ÚX[[[\Ú\ÏÜÜ[Ù]]Û\ÜÏHÝ]XØ\Ü[Û\ÜÏHÝ]][YHÔOÜÜ[Ü[Û\ÜÏHÝ][X[ÜÛ[È[[]XÜÏÜÜ[Ù]Ù]Ù]Ù]Ù]ÜÙXÝ[ÛKKHÒPÕÈKOÙXÝ[ÛYHÚXÝÈ]Û\ÜÏHÙXÝ[ÛZ[\Ü[Û\ÜÏHÙXÝ[Û]YÈÙ[XÝYÛÜÏÜÜ[]Û\ÜÏHÙXÝ[ÛY]Y\Ù]Û\ÜÏHÙXÝ[ÛZXY[ÈX]\YÚXÝÏÚ]Û\ÜÏHÚXÝËYÜYKKHÚXÝN[ÜÝÝ[[\Ú\ÈKO]Û\ÜÏHÚXÝXØ\YK]\]Û\ÜÏHÚXÝ\]Y]ÈÜ[Û\ÜÏHÚXÝXYÙHÛÜ	ZYÝÈ^Ù[ÜÜ[ÝÈÚYHZYÚHLLY]ÐÞHLL[HÛH[ÏHËÝÝÝËÌËÜËÌÜÝÈ[HOHLOHHLHÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏ[HOHLOH
+HHLH
+HÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏ[HOHLOHÌHLHÌÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏ[HOHLOHLHLHLÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏÛ[[HÚ[ÏHK
+MK
+Ì
+K
+LMK
+M
+KÍMÍKÝÚÙOHØJKM
+Í
+JHÝÚÙK]ÚYHH[HÛHÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[ÏÛ[[HÚ[ÏHK
+MK
+Ì
+K
+LMK
+M
+KÍMÍKÝÚÙOHØJKM
+ÍLHÝÚÙK]ÚYHL[HÛHÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[ÏÚ\ÛHÞHHÞOHH[HØJKM
+ÍJHÏÚ\ÛHÞH
+HÞOHH[HØJKM
+ÍJHÏÚ\ÛHÞHM
+HÞOHÍH[HØJKM
+ÍJHÏÚ\ÛHÞHÞOHH[HØJKM
+ÍJHÏ[HOHLOHLHLHLÝÚÙOHØJMKMKMKÊHÝÚÙK]ÚYHKHÏÜÝÏÙ]]Û\ÜÏHÚXÝXÙH]Û\ÜÏHÚXÝXØ]YÛÜH[[[\Ú\È	ZYÝÈX\Ù]\ÙX\ÚÙ]ÈÛ\ÜÏHÚXÝ]]H[ÜÝÝ[[\Ú\ÏÚÏÛ\ÜÏHÚXÝY\ØÈ]Z[YØÝ[Y[][ÛÙ[ÜÝÝ[[\Ú\ÈY]ÙÛÙÞKÛÝ\[ÈHÛÛ\]HÛÜÚ[ÈÙÚXÈZ[[^Ù[X\ÙY[[]XØ[[\]K^Z[È]H[]ËØ[Ý[][Û[Y]ÛÜÜË[[\]][Û[\Ü[ÈÝ]]È\ÙYÈ\ÜÙ\ÜÈ[ÜÝÝ]\ÈXÜÜÜÈHÜÛ[ËÜ]Û\ÜÏHÚXÝ]ÛÛÈÜ[Û\ÜÏHÛÛ]YÈÛÜÜÜ[Ü[Û\ÜÏHÛÛ]YÈ^Ù[ÜÜ[Ü[Û\ÜÏHÛÛ]YÈ[[[]XÜÏÜÜ[Ü[Û\ÜÏHÛÛ]YÈ[[ÚX[\Ü[ÏÜÜ[Ù]HYHÎËÙÚ]XÛÛKÓX[XKPYØ\Ø[MKÑ[[ÚX[TÚXÝÈ\Ù]HØ[È[HÛÜ[\Û\ÜÏHÚXÝ[[ÈY]ÈÛÚ]XÝÈÚYHLÈZYÚHLÈ[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHH]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLMÈ
+
+LM
+MMÈÏÜÝÏØOÙ]Ù]KKHÚXÝRHÛÛÛÛXÝ[ÛÈ[[[\Ú\ÈKO]Û\ÜÏHÚXÝXØ\YK]\Ý[OH[Ú][ÛY[^N\È]Û\ÜÏHÚXÝ\]Y]ÈÜ[Û\ÜÏHÚXÝXYÙHÛÜ	ZYÝÈ^Ù[ÜÜ[ÝÈÚYHZYÚHLLY]ÐÞHLL[HÛH[ÏHËÝÝÝËÌËÜËÌÜÝÈ[HOHLOHHLHÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏ[HOHLOH
+HHLH
+HÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏ[HOHLOHÌHLHÌÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏXÝHOHMHÚYHMZYÚHÍHH[HØJKM
+ÍJHÏXÝH
+OHÎÚYHMZYÚHLH[HØJKM
+Í
+JHÏXÝHOHÚYHMZYÚHH[HØJKM
+ÍJHÏXÝH
+OHÚYHMZYÚHH[HØJKM
+Í
+JHÏXÝHLOHÚYHMZYÚHH[HØJKM
+ÍJHÏXÝHLOHÚYHMZYÚHH[HØJKM
+Í
+JHÏXÝHMOHÍHÚYHMZYÚHMHH[HØJKM
+ÍJHÏXÝHMOHNÚYHMZYÚHÌH[HØJKM
+Í
+JHÏ[HOHLOHLHLHLÝÚÙOHØJMKMKMKÊHÝÚÙK]ÚYHKHÏÜÝÏÙ]]Û\ÜÏHÚXÝXÙH]Û\ÜÏHÚXÝXØ]YÛÜH[[[\Ú\È	ZYÝÈXÚÛÙÞH[[ÙOÙ]ÈÛ\ÜÏHÚXÝ]]HRHÛÛÛÛXÝ[ÛÈ[[[\Ú\ÏÚÏÛ\ÜÏHÚXÝY\ØÈ[[\Ú\ÈÙ[È[RHÛÛYÜ[Û[ÛÛXÝ[ÛÈ\ÜX[ÙK\]YÛH[^Ù[]\Ù]ØÝ[Y[ÈH[[]XØ[\ØXÚÙ^HY]XÜÈXÚÙY[]\ÈY[YYY[[ÚYÚÈÛÜÝÝZXÝÜY\ÈXÜÜÜÈRHÛÛØ]YÛÜY\ËÜ]Û\ÜÏHÚXÝ]ÛÛÈÜ[Û\ÜÏHÛÛ]YÈÛÜÜÜ[Ü[Û\ÜÏHÛÛ]YÈ^Ù[ÜÜ[Ü[Û\ÜÏHÛÛ]YÈ[[[\Ú\ÏÜÜ[Ü[Û\ÜÏHÛÛ]YÈ]H[[]XÜÏÜÜ[Ù]HYHÎËÙÚ]XÛÛKÓX[XKPYØ\Ø[MKÑ[[ÚX[TÚXÝÈ\Ù]HØ[È[HÛÜ[\Û\ÜÏHÚXÝ[[ÈY]ÈÛÚ]XÝÈÚYHLÈZYÚHLÈ[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHH]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLMÈ
+
+LM
+MMÈÏÜÝÏØOÙ]Ù]KKHÚXÝÎÝX[^YXØ[[]ÈXÚÙ\KO]Û\ÜÏHÚXÝXØ\YK]\Ý[OH[Ú][ÛY[^NÈ]Û\ÜÏHÚXÝ\]Y]ÈÜ[Û\ÜÏHÚXÝXYÙH^Ù[	ZYÝÈ[S][ÜÜ[ÝÈÚYHZYÚHLLY]ÐÞHLL[HÛH[ÏHËÝÝÝËÌËÜËÌÜÝÈ[HOHLOHHLHÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏ[HOHLOH
+HHLH
+HÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏ[HOHLOHÌHLHÌÝÚÙOHØJKM
+ÍN
+HÝÚÙK]ÚYHHÏXÝHÌOHÎÚYHNZYÚHLH[HØJKM
+Í
+JHÏXÝHOHÚYHNZYÚHH[HØJKM
+Í
+JHÏXÝHLOHÍÚYHNZYÚHMH[HØJKM
+Í
+JHÏXÝHLOHÚYHNZYÚHH[HØJKM
+Í
+JHÏXÝHMLOHÌÚYHNZYÚHH[HØJKM
+Í
+JHÏXÝHNOHÚYHNZYÚHH[HØJKM
+Í
+JHÏXÝHÌOHÎÚYHNZYÚHLH[HØJMKMKMKN
+HÏXÝHOHÚYHNZYÚHH[HØJMKMKMKN
+HÏXÝHLOHÚYHNZYÚHLH[HØJMKMKMKN
+HÏXÝHLOH
+ÚYHNZYÚHH[HØJMKMKMKN
+HÏXÝHMLOHÚYHNZYÚHH[HØJMKMKMKN
+HÏXÝHNOHÍÚYHNZYÚHMH[HØJMKMKMKN
+HÏ[HOHLOHLHLHLÝÚÙOHØJMKMKMKÊHÝÚÙK]ÚYHKHÏÜÝÏÙ]]Û\ÜÏHÚXÝXÙH]Û\ÜÏHÚXÝXØ]YÛÜHÜÛ[È\ÜX[ÙH	ZYÝÈØØÝ\[ÞH[[]XÜÏÙ]ÈÛ\ÜÏHÚXÝ]]HÝX[^YXØ[[]ÈXÚÙ\	Y\ÚÈ[][ÚÏÛ\ÜÏHÚXÝY\ØÈ[[][XÚÙ\[Û]Ü[ÈÝX[^Y\Ý\ÈXØ[[]ÛÝ[ÈXÜÜÜÈHÜÛ[ËÝY\ÈHÛÛÛÛY]YY]ÈÙØØÝ\[ÞHÝ]\Ë[X[È\ÜÙ]X[YÙ\ÈÈY[YHXØ[ÞH[ËXÚÈÝX[^][Û[Y[[\Ë[Ý\ÜÜÛ[Ë[][\Ü[È[XÚ\Ú[Û[XZÚ[ËÜ]Û\ÜÏHÚXÝ]ÛÛÈÜ[Û\ÜÏHÛÛ]YÈ^Ù[ÜÜ[Ü[Û\ÜÏHÛÛ]YÈ[S][\Ü[ÏÜÜ[Ü[Û\ÜÏHÛÛ]YÈØØÝ\[ÞH[[]XÜÏÜÜ[Ü[Û\ÜÏHÛÛ]YÈÜÛ[ÈXÚÚ[ÏÜÜ[Ù]HYHÎËÙÚ]XÛÛKÓX[XKPYØ\Ø[MKÑ[[ÚX[TÚXÝËØØÛXZ[ÔÝX[^Y	LXØ[	L[]ÉLXÚÙ\Ñ[	L][Þ\Ù]HØ[È[HÛÜ[\Û\ÜÏHÚXÝ[[ÈY]ÈÛÚ]XÝÈÚYHLÈZYÚHLÈ[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHH]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLMÈ
+
+LM
+MMÈÏÜÝÏØOÙ]Ù]Ù]KKHÜÚXÝËYÜYKOÙ]ÜÙXÝ[ÛKKHVTTÑHKOÙXÝ[ÛYH^\\ÙH]Û\ÜÏHÙXÝ[ÛZ[\Ü[Û\ÜÏHÙXÝ[Û]YÈÝ[OHÛÛÜ\KYÛÛ
+H[[]XØ[ÛÝ\YÙOÜÜ[]Û\ÜÏHÙXÝ[ÛY]Y\Ù]Û\ÜÏHÙXÝ[ÛZXY[ÈYÚ\X\ÈÙ^\\ÙOÚ]Û\ÜÏH^\\ÙKYÜY]Û\ÜÏH^\\ÙKXØ\YK]\]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HNHN]MLLL
+XLLLLLLXLLLLLLKMLLLLXLLLLLMLKLLLKLLÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YHÜÛ[È	[\ÈÜ\H\ÜX[ÙH\Ü[ÏÙ]]Û\ÜÏH^\\ÙKY\ØÈXÝ\[ÈÔH\ÚØ\È[\ÜX[ÙHÝ[[X\Y\È][[Ü\H][ËÙ]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^N
+\È]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLLÈ
+ÚLLNNMMM
+ÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YH[ÜÝÝ	[\ÈØØÝ\[ÞH[[\Ú\ÏÙ]]Û\ÜÏH^\\ÙKY\ØÈÜ\K[][[[XÚÚ[ËØØÝ\[ÞH[ÚX\Ú[Ë[X\Ù]ÜÚ][Û[ËÙ]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^NLÈ]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HN
+ÕÛN
+ÛKNHLMHZMLLØLLL
+XLLLLÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YHX\ÙH^\][Û	[\È[]Ø[[[\Ú\ÏÙ]]Û\ÜÏH^\\ÙKY\ØÈ^\][ÛØÚY[H[Ù[[Ë[]Ø[ØX[]H[[\Ú\Ë[ÛÝ\\ÚÈ\ÜÙ\ÜÛY[Ù]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^NM\È]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLÈLNMÈMZ[M[KMÈ
+LLÈÈËLÕLÈÈLËLÒ
+LÈÈLÈÝLÈÈÈÞÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YHÛÛXÝ[ÛÈ	[\ÈT[[\Ú\ÏÙ]]Û\ÜÏH^\\ÙKY\ØÈXØÛÝ[ÈXÙZ]XHYÚ[ËÛÛXÝ[Û]HXÚÚ[Ë[[[]Y[ÞH[\Ü[ËÙ]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^NÈ]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLNHUXLLL
+ØLLMLMKLM[KNHÛL
+SNH
+Ú[KLH
+[MM[KLH
+[KMHLMXLHHLKLZLHHLH][KM
+ÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YHØ\^	[\È[Ý][ÛXÚÚ[ÏÙ]]Û\ÜÏH^\\ÙKY\ØÈØ\][^[]\HYÙ][ËÚXÝ[][ÛÜÝXÚÚ[Ë[[Ý][ÛÒH[[\Ú\ËÙ]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^N\È]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLË
+MHLR
+XLLXLLM
+SNËLÍUKPLHHLHXLLL
+LLK
+LMHNLLLË
+LHLNHHLKLNHHLNÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YHTÑÈÈ[\ÞH	[\ÈØ]\[[\Ú\ÏÙ]]Û\ÜÏH^\\ÙKY\ØÈÝ\ÝZ[X[]HÔHXÚÚ[Ë[\ÞH[Ø]\ÛÛÝ[\[Û[ÚX\Ú[Ë[TÑÈ\Ü[ËÙ]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^NÌÈ]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HNHMK
 
-      <div class="expertise-card fade-up" style="transition-delay:0.40s">
-        <div class="expertise-icon">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.5l3.5 3.5L13 11m5 2l1.5 1.5L23 10"/></svg>
-        </div>
-        <div class="expertise-name">Ad Hoc Reporting &amp; Data Queries</div>
-        <div class="expertise-desc">Fast-turn reporting for stakeholder and management requests using Excel, SQL, and Power BI.</div>
-      </div>
+ËLÌLHHLÈMÎKNLHHLK
 
-    </div>
-  </div>
-</section>
+ËKMH
+ÛLLÛ
+LÛKMÕÛML
+MLÈÍLHHHNÎËNLHHKMLËKMMH
+LLÕLH
+ÈÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YHX\Ù]	[\ÈÛÛ\\XHÜ\H[[\Ú\ÏÙ]]Û\ÜÏH^\\ÙKY\ØÈÛÛ\Ù][ÚX\Ú[ËÝXX\Ù][[\Ú\Ë[ÜÚ][Û[È[]]HÈX\Ù]Y\ËÙ]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^NÍ\È]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLLËLKMÈLÈMKLÈÌKÍÈÈÈMHÈLKÍÈLÈLNÌKLHNNHSLLÛL]L[LLXËLKLHLKLNNKLSLHLNHHLKLNHHLNÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YH[[ÚX[[Ù[[È	[\ÈÑÙ]]Û\ÜÏH^\\ÙKY\ØÈXÜ]Z\Ú][Û[\Ü][Ë\ØÛÝ[YØ\ÚÝÈ[Ù[[ËTÙ\]Z]H][\H[[\Ú\Ë[Ù[Ú]]]HX\ËÙ]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^NÈ]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HNH
+R
+ØLLLLLLLØLLLLNH
+XLLLNH
+XLLLLLÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YHYÙ]ËXÝX[	[\ÈÜXØ\Ý[ÏÙ]]Û\ÜÏH^\\ÙKY\ØÈ\X[ÙH[[\Ú\È[Y]ÛÜÜËÛ[ÈÜXØ\ÝË[	[\ÓXÛÛÚ[X][Û]Ü\H[ÜÛ[È][ËÙ]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^N
+\È]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHKXÝHÈOHÈÚYHÈZYÚHÈHHÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[ÏXÝHMOHÈÚYHÈZYÚHÈHHÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[ÏXÝHÈOHMÚYHÈZYÚHÈHHÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[ÏXÝHMOHMÚYHÈZYÚHÈHHÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[ÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YHÝÙ\H\ÚØ\ÏÙ]]Û\ÜÏH^\\ÙKY\ØÈ[\XÝ]H^XÝ]]H\ÚØ\ÈÛÛXÝ[ÈÜ\][Û[[[[ÚX[]HÜX[][YHÜÛ[È\ÚX[]KÙ]Ù]]Û\ÜÏH^\\ÙKXØ\YK]\Ý[OH[Ú][ÛY[^NLÈ]Û\ÜÏH^\\ÙKZXÛÛÝÈÚYHZYÚH[HÛHY]ÐÞHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHK]ÝÚÙK[[XØ\HÝ[ÝÚÙK[[ZÚ[HÝ[HLH[MMLMXMÈ
+ÈLKLM
+È
+ÈLMÏÜÝÏÙ]]Û\ÜÏH^\\ÙK[[YHXÜ]Z\Ú][Û	[\ÈYH[YÙ[ÙOÙ]]Û\ÜÏH^\\ÙKY\ØÈX[ØÜY[[Ë[[ÚX[YH[YÙ[ÙHÝ\Ü[XÜ]Z\Ú][Û[\Ü][ÈÜX[\Ý]H[ØXÝ[ÛËÙ]Ù]Ù]Ù]ÜÙXÝ[ÛKKHÓÓÈKOÙXÝ[ÛYHÛÛÈ]Û\ÜÏHÙXÝ[ÛZ[\Ü[Û\ÜÏHÙXÝ[Û]YÈXÚÝXÚÏÜÜ[]Û\ÜÏHÙXÝ[ÛY]Y\Ù]Û\ÜÏHÙXÝ[ÛZXY[ÈÛÛÈ	[\ÈÚÚ[ÏÚ]Û\ÜÏHÛÛË\ÝÈ]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[ZXÜÜÛÙ^Ù[
+Y[ÙY
+OÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[ÝÙ\OÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[ÝÙ\]Y\OÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[H	[\ÈXXÜÜÏÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[[[ÚX[[Ù[[ÏÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[Ñ[[\Ú\ÏÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[]ÝX\È	[\ÈÝÙ\]ÝÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[ÔS
+\Ü[ÊOÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[[[ÙH[[]XÜÏÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[ÜÛ[È\Ü[ÏÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[\X[ÙH[[\Ú\ÏÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[X\HÈTH
+[Z[X\]JOÙ]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[ÛÜ	[\ÈÝÙ\Ú[Ù]]Û\ÜÏHÛÛXÚ\Ü[Û\ÜÏHÝÜÜ[]H\ÝX[^][ÛÙ]Ù]Ù]ÜÙXÝ[ÛKKHÓÓPÕKOÙXÝ[ÛYHÛÛXÝ]Û\ÜÏHÙXÝ[ÛZ[\Ü[Û\ÜÏHÙXÝ[Û]YÈÝ[OHÛÛÜ\KYÛÛ
+HÙ][ÝXÚÜÜ[]Û\ÜÏHÙXÝ[ÛY]Y\Ù]Û\ÜÏHÙXÝ[ÛZXY[ÈYÚÜ[ÈÜÜ[]Y\ÏÚÛ\ÜÏHÛÛXÝ\ÝX]HÜ[È[[ÚX[[[\Ý[[[ÙH[[\Ú\ÈÛ\ÈXÜÜÜÈÛXZ[ËY[YHÈXXÚÝ]XH[ÙY[ÜÚ]XÜ]Û\ÜÏHÛÛXÝ[[ÜÈHYHÎËÝÝÝË[ÙY[ÛÛKÚ[ÛX[XKXYØ\Ø[MH\Ù]HØ[È[HÛÜ[\Û\ÜÏH\[X\HÝÈÚYHMZYÚHM[HÝ\[ÛÛÜY]ÐÞH]HL
 
-<!-- TOOLS / SKILLS -->
-<section id="tools">
-  <div class="section-inner">
-    <span class="section-tag">Technology &amp; Tools</span>
-    <div class="section-divider"></div>
-    <h2 class="section-heading">Skills &amp; Tools</h2>
-    <div class="tools-row">
-      <div class="tool-chip"><span class="dot"></span>Microsoft Excel</div>
-      <div class="tool-chip"><span class="dot"></span>Power BI</div>
-      <div class="tool-chip"><span class="dot"></span>VBA / Macros</div>
-      <div class="tool-chip"><span class="dot"></span>Pivot Tables</div>
-      <div class="tool-chip"><span class="dot"></span>Financial Modeling</div>
-      <div class="tool-chip"><span class="dot"></span>SQL (Reporting)</div>
-      <div class="tool-chip"><span class="dot"></span>Finance Analytics</div>
-      <div class="tool-chip"><span class="dot"></span>Portfolio Reporting</div>
-      <div class="tool-chip"><span class="dot"></span>Variance Analysis</div>
-      <div class="tool-chip"><span class="dot"></span>Yardi / MRI (familiarity)</div>
-      <div class="tool-chip"><span class="dot"></span>Word &amp; PowerPoint</div>
-      <div class="tool-chip"><span class="dot"></span>Data Visualization</div>
-    </div>
-  </div>
-</section>
+È
+LLËMMMKMXÌLKÌKËLËÍËLK
+LLËÍËLK
+LÈLLÍK
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-inner">
-    <span class="section-tag" style="color:var(--gold)">Get in Touch</span>
-    <div class="section-divider"></div>
-    <h2 class="section-heading light">Open to Opportunities</h2>
-    <p class="contact-subtitle">
-      Open to Financial Analyst and finance analysis roles across domains. Feel free to reach out via LinkedIn or GitHub.
-    </p>
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/manya-agarwal15" target="_blank" rel="noopener" class="btn-primary">
-        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V94h3.564v11.452zM22.225 0H0.001C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 1.774 23.2 0 22.222 0h.003z"/></svg>
-        LinkedIn
-      </a>
-      <a href="https://github.com/Manya-Agarwal15" target="_blank" rel="noopener" class="btn-outline">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        GitHub
-      </a>
-    </div>
-  </div>
-</section>
+KLLÍLÎ]KÒKÍLUZËMKMZ
 
-<!-- FOOTER -->
-<footer>
-  <p>&copy; 2025 Manya Agarwal &middot; <a href="https://github.com/Manya-Agarwal15" target="_blank" rel="noopener">github.com/Manya-Agarwal15</a> &middot; Financial Analyst</p>
-</footer>
+Ë
+ÍËKHKÍËLK
+HËÍËLK
+HËH
+ÈÍÈ
+È
+K
+M]
+MKÌÍÈ
+ËÌØL
+
+KL
+ËL
+H
+
+LL
+È
+^LKÎLËNRËMMUZËMLK
+LLHKÍÌPËÎLÍÍKÌ]MÌËËÎLKÍÌH
+LPÌËËÈÌUKÌPÌÍÍËÞÏÜÝÏ[ÙY[ØOHYHÎËÙÚ]XÛÛKÓX[XKPYØ\Ø[MH\Ù]HØ[È[HÛÜ[\Û\ÜÏH[Ý][HÝÈÚYHMZYÚHMY]ÐÞH[HÝ\[ÛÛÜ]HLLÍKÍÈ
+KÍÈLÌ
+KÌHËÍHKÎMH
+HLKÎ
+KL
+KKKMKKKMÈK
+KKMKLKËKMKLÍKLËMKMMKLËÎMKKÌÍKMÍKLKKKLÍKKÍ
+KKÌLKKLKËLKMKKKKLKKÎKMKKÎMKM
+KKMHK
+ÈK
 
-<script>
-  // Scroll-triggered fade-up
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+HKÈKKMH
+HKÌ
+HËMKNKL
+KKÎLKÌ
+KÍKLK
+KLËKËMK
+LKÌÍKMK
+MKLHLKÌ
+K
+KLÎ
+HKËLËKKLKËKMLKLËLLËNK
+KKÌMHËÈKËMKÈKNK
+HÈK
+\Ì
+LÍHÈ
+XÌMKLKMËËLKÈËËLKËKKLËNÍK
+KÈKL
+HKÈËH
+
+KL
+H
+KKMK
+ÍH
+KLKÍKÍÍKHKMKHK
+KKMHMKKMHËÈÌMKKKKMÐLLLLÌMËMKÍËLLLLLLÏÜÝÏÚ]XØOÙ]Ù]ÜÙXÝ[ÛKKHÓÕTKOÛÝ\ÛÜNÈHX[XHYØ\Ø[	ZYÝÈHYHÎËÙÚ]XÛÛKÓX[XKPYØ\Ø[MH\Ù]HØ[È[HÛÜ[\Ú]XÛÛKÓX[XKPYØ\Ø[MOØO	ZYÝÈ[[ÚX[[[\ÝÜÙÛÝ\ØÜ\ËÈØÜÛ]YÙÙ\YYK]\ÛÛÝØÙ\\H]È[\ÙXÝ[ÛØÙ\\
+[Y\ÊHOÂ[Y\ËÜXXÚ
+[HOÂY
+[K\Ò[\ÙXÝ[ÊHÂ[K\Ù]Û\ÜÓ\ÝY
+	Ý\ÚXIÊNÂØÙ\\[ØÙ\J[K\Ù]
+NÂBJNÂKÈ\ÚÛLJNÂØÝ[Y[]Y\TÙ[XÝÜ[
+	ËYK]\	ÊKÜXXÚ
+[OØÙ\\ØÙ\J[
+JNÂÜØÜ\ØÙOÚ[
