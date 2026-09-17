@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Manya Agarwal | Financial Analyst</title>
 
-    <meta name="description" content="Manya Agarwal — Financial Analyst specializing in Real Estate Asset Management, Excel, Power BI and financial analysis.">
+    <meta name="description"
+          content="Manya Agarwal — Financial Analyst with experience in financial analysis, modelling, investment analysis, real estate asset management, Excel and Power BI.">
 
     <style>
 
@@ -43,7 +46,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(245, 247, 252, 0.9);
+            background: rgba(245, 247, 252, 0.94);
             backdrop-filter: blur(12px);
             position: sticky;
             top: 0;
@@ -73,6 +76,7 @@
             color: #2449b8;
         }
 
+
         /* =========================
            HERO
         ========================= */
@@ -84,9 +88,14 @@
             align-items: center;
             justify-content: space-between;
             gap: 70px;
+
             background:
-                radial-gradient(circle at 80% 20%, rgba(53, 91, 190, 0.10), transparent 30%),
-                linear-gradient(135deg, #f7f9fe 0%, #e9eef9 100%);
+                radial-gradient(circle at 82% 20%,
+                rgba(53, 91, 190, 0.10),
+                transparent 30%),
+                linear-gradient(135deg,
+                #f7f9fe 0%,
+                #e9eef9 100%);
         }
 
         .hero-content {
@@ -146,9 +155,9 @@
         }
 
         .hero-description {
-            font-size: 18px;
+            font-size: 19px;
             color: #536078;
-            max-width: 680px;
+            max-width: 700px;
             margin-bottom: 18px;
         }
 
@@ -159,7 +168,7 @@
         .hero-subtext {
             font-size: 15px;
             color: #69758b;
-            max-width: 650px;
+            max-width: 680px;
             margin-bottom: 32px;
         }
 
@@ -198,66 +207,67 @@
             transform: translateY(-2px);
         }
 
+
         /* =========================
-           HERO ANALYTICS CARD
+           FINANCE VISUAL
         ========================= */
 
-        .analytics-card {
+        .finance-card {
             width: 370px;
             min-width: 320px;
-            background: rgba(255,255,255,0.88);
+            background: rgba(255,255,255,0.90);
             border-radius: 25px;
             padding: 28px;
             box-shadow: 0 25px 60px rgba(35, 55, 100, 0.14);
             border: 1px solid rgba(255,255,255,0.8);
         }
 
-        .card-header {
+        .finance-card-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 25px;
         }
 
-        .card-title {
+        .finance-card-title {
             font-size: 14px;
             font-weight: 800;
         }
 
-        .card-label {
+        .finance-card-label {
             font-size: 11px;
             color: #7a8598;
         }
 
-        .metric {
+        .finance-item {
             padding: 16px 0;
             border-bottom: 1px solid #edf0f5;
         }
 
-        .metric:last-child {
+        .finance-item:last-child {
             border-bottom: none;
         }
 
-        .metric-name {
+        .finance-name {
             font-size: 12px;
             color: #7a8497;
             margin-bottom: 3px;
         }
 
-        .metric-value {
-            font-size: 24px;
+        .finance-value {
+            font-size: 22px;
             font-weight: 800;
             color: #172033;
         }
 
-        .metric-note {
+        .finance-note {
             font-size: 11px;
             color: #2449b8;
             font-weight: 700;
         }
 
         .chart {
-            height: 80px;
+            height: 75px;
             display: flex;
             align-items: end;
             gap: 7px;
@@ -271,13 +281,14 @@
             opacity: 0.85;
         }
 
-        .bar:nth-child(1) { height: 35%; }
-        .bar:nth-child(2) { height: 50%; }
-        .bar:nth-child(3) { height: 43%; }
-        .bar:nth-child(4) { height: 68%; }
-        .bar:nth-child(5) { height: 58%; }
-        .bar:nth-child(6) { height: 82%; }
-        .bar:nth-child(7) { height: 94%; }
+        .bar:nth-child(1) { height: 30%; }
+        .bar:nth-child(2) { height: 43%; }
+        .bar:nth-child(3) { height: 38%; }
+        .bar:nth-child(4) { height: 57%; }
+        .bar:nth-child(5) { height: 65%; }
+        .bar:nth-child(6) { height: 78%; }
+        .bar:nth-child(7) { height: 92%; }
+
 
         /* =========================
            GENERAL SECTIONS
@@ -288,7 +299,7 @@
         }
 
         .section-heading {
-            max-width: 700px;
+            max-width: 720px;
             margin-bottom: 50px;
         }
 
@@ -313,6 +324,7 @@
             font-size: 16px;
             max-width: 680px;
         }
+
 
         /* =========================
            ABOUT
@@ -368,6 +380,7 @@
             margin-right: 10px;
         }
 
+
         /* =========================
            EXPERIENCE
         ========================= */
@@ -402,6 +415,15 @@
             font-weight: 700;
         }
 
+        .experience-category {
+            font-size: 13px;
+            font-weight: 800;
+            color: #2449b8;
+            margin: 24px 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
         .experience-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -419,6 +441,7 @@
             margin-right: 8px;
             font-weight: bold;
         }
+
 
         /* =========================
            SKILLS
@@ -461,6 +484,65 @@
             font-weight: 600;
         }
 
+
+        /* =========================
+           EDUCATION
+        ========================= */
+
+        .education {
+            background: white;
+        }
+
+        .education-card {
+            background: #f4f7fd;
+            border: 1px solid #e4e9f3;
+            border-radius: 20px;
+            padding: 28px 30px;
+        }
+
+        .education-card h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .education-card p {
+            color: #657086;
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           CERTIFICATIONS
+        ========================= */
+
+        .certifications {
+            background: #f5f7fc;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .cert-card {
+            background: white;
+            padding: 20px 23px;
+            border-radius: 15px;
+            border: 1px solid #e4e8f0;
+        }
+
+        .cert-card h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .cert-card p {
+            color: #6a7589;
+            font-size: 12px;
+        }
+
+
         /* =========================
            PROJECTS
         ========================= */
@@ -490,10 +572,11 @@
         }
 
         .project-number {
-            font-size: 12px;
+            font-size: 11px;
             color: #2449b8;
             font-weight: 800;
             margin-bottom: 20px;
+            letter-spacing: 0.7px;
         }
 
         .project-card h3 {
@@ -528,6 +611,39 @@
             font-weight: 800;
             color: #2449b8;
         }
+
+
+        /* =========================
+           ADDITIONAL WORK
+        ========================= */
+
+        .additional-work {
+            background: #eef2fa;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        .work-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #e1e6f0;
+        }
+
+        .work-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .work-card p {
+            font-size: 14px;
+            color: #657086;
+        }
+
 
         /* =========================
            CONTACT
@@ -567,6 +683,7 @@
             border: 1px solid rgba(255,255,255,0.15);
         }
 
+
         /* =========================
            FOOTER
         ========================= */
@@ -578,6 +695,7 @@
             text-align: center;
             font-size: 12px;
         }
+
 
         /* =========================
            MOBILE
@@ -595,7 +713,7 @@
                 align-items: flex-start;
             }
 
-            .analytics-card {
+            .finance-card {
                 width: 100%;
                 max-width: 500px;
             }
@@ -638,7 +756,9 @@
 
             .skills-grid,
             .project-grid,
-            .experience-list {
+            .experience-list,
+            .cert-grid,
+            .work-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -646,648 +766,1064 @@
                 flex-direction: column;
             }
 
-            .analytics-card {
+            .finance-card {
                 min-width: 0;
             }
 
         }
 
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================= -->
 
-    <nav>
-        <div class="logo">
-            Manya<span>.</span>
-        </div>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+<nav>
+
+    <div class="logo">
+        PORTFOLIO<span>.</span>
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#about">About</a>
+
+        <a href="#experience">Experience</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#education">Education</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</nav>
 
 
-    <!-- =========================
-         HERO
-    ========================= -->
 
-    <section class="hero">
+<!-- =========================
+     HERO
+========================= -->
 
-        <div class="hero-content">
+<section class="hero">
 
-            <div class="badge">
-                FINANCE & ANALYTICS PROFESSIONAL
-            </div>
+    <div class="hero-content">
 
-            <h1>
-                Hi, I'm <span>Manya.</span>
-            </h1>
-
-            <div class="hero-tags">
-                <div class="hero-tag">Commerce — Economics</div>
-                <div class="hero-tag">Accounting & Finance</div>
-                <div class="hero-tag">Financial Analysis</div>
-            </div>
-
-            <p class="hero-description">
-                I'm a <strong>Financial Analyst</strong> with experience in
-                <strong>real estate asset management</strong>, financial
-                reporting, KPI analysis and data-driven decision making.
-            </p>
-
-            <p class="hero-subtext">
-                I work at the intersection of <strong>finance, real estate,
-                and analytics</strong>, using Excel and Power BI to transform
-                financial and operational data into practical insights.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    Explore Projects →
-                </a>
-
-                <a href="#contact" class="btn btn-secondary">
-                    Open to Opportunities
-                </a>
-            </div>
-
+        <div class="badge">
+            FINANCE & ANALYTICS PROFESSIONAL
         </div>
 
 
-        <!-- ANALYTICS VISUAL -->
+        <h1>
+            Hi, I'm <span>Manya.</span>
+        </h1>
 
-        <div class="analytics-card">
 
-            <div class="card-header">
-                <div class="card-title">
-                    Portfolio Analytics
-                </div>
+        <div class="hero-tags">
 
-                <div class="card-label">
-                    Financial Analysis
-                </div>
+            <div class="hero-tag">
+                Financial Analyst
             </div>
 
-            <div class="metric">
-                <div class="metric-name">
-                    Financial & Operational Reporting
-                </div>
-
-                <div class="metric-value">
-                    Weekly
-                </div>
-
-                <div class="metric-note">
-                    KPI tracking
-                </div>
+            <div class="hero-tag">
+                Finance & Investment Analysis
             </div>
 
-            <div class="metric">
-                <div class="metric-name">
-                    Real Estate Analytics
-                </div>
-
-                <div class="metric-value">
-                    Portfolio
-                </div>
-
-                <div class="metric-note">
-                    Property & regional analysis
-                </div>
-            </div>
-
-            <div class="metric">
-                <div class="metric-name">
-                    Analytics Tools
-                </div>
-
-                <div class="metric-value">
-                    Excel + Power BI
-                </div>
-            </div>
-
-            <div class="chart">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="hero-tag">
+                Real Estate
             </div>
 
         </div>
 
-    </section>
+
+        <p class="hero-description">
+
+            I'm a <strong>Financial Analyst</strong> with experience in
+            financial analysis, modelling, investment analysis and
+            real estate asset management.
+
+        </p>
 
 
-    <!-- =========================
-         ABOUT
-    ========================= -->
+        <p class="hero-subtext">
 
-    <section class="about" id="about">
+            With a foundation in Commerce, Economics, Accounting and Finance,
+            I use analytical tools and structured financial frameworks to
+            evaluate performance, understand trends and turn complex data
+            into decision-ready insights.
 
-        <div class="section-heading">
-            <div class="section-label">About Me</div>
+        </p>
 
-            <h2>
-                Finance meets<br>
-                real estate & analytics.
-            </h2>
 
-            <p class="section-intro">
-                A finance professional focused on turning financial and
-                operational data into clear, actionable insights.
-            </p>
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn btn-primary">
+                Explore Portfolio →
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+                Connect With Me
+            </a>
+
         </div>
 
-        <div class="about-grid">
+    </div>
 
-            <div class="about-text">
 
-                <p>
-                    I am a Financial Analyst with a background in Commerce,
-                    Economics, Accounting and Finance, and professional
-                    experience in US-based real estate asset management.
-                </p>
 
-                <p>
-                    My work involves analyzing property and portfolio-level
-                    performance, building recurring reporting frameworks,
-                    tracking KPIs and supporting asset management decisions
-                    through structured financial analysis.
-                </p>
+    <!-- FINANCE VISUAL -->
 
-                <p>
-                    I use <strong>Microsoft Excel</strong> and
-                    <strong>Power BI</strong> to organize data, automate
-                    analysis and build reporting solutions that make complex
-                    information easier to understand.
-                </p>
+    <div class="finance-card">
 
+        <div class="finance-card-header">
+
+            <div class="finance-card-title">
+                Financial Analysis
             </div>
 
-
-            <div class="about-highlight">
-
-                <h3>What I work on</h3>
-
-                <ul>
-                    <li>Real Estate Asset Management</li>
-                    <li>Financial & Operational Reporting</li>
-                    <li>Portfolio & Property KPI Analysis</li>
-                    <li>Rent Growth & Leasing Analytics</li>
-                    <li>Collections & AR Analysis</li>
-                    <li>CapEx & Renovation Analysis</li>
-                    <li>Dashboard Development</li>
-                </ul>
-
+            <div class="finance-card-label">
+                Selected capabilities
             </div>
 
         </div>
 
-    </section>
 
+        <div class="finance-item">
 
-    <!-- =========================
-         EXPERIENCE
-    ========================= -->
-
-    <section id="experience">
-
-        <div class="section-heading">
-
-            <div class="section-label">
-                Experience
+            <div class="finance-name">
+                Financial Modelling
             </div>
 
-            <h2>
-                Real Estate<br>
-                Asset Management
-            </h2>
-
-            <p class="section-intro">
-                Experience supporting financial and operational analysis
-                across a US-based real estate portfolio.
-            </p>
-
-        </div>
-
-
-        <div class="experience-card">
-
-            <div class="experience-top">
-
-                <div class="experience-title">
-
-                    <h3>
-                        Financial Analyst
-                    </h3>
-
-                    <p>
-                        Real Estate Asset Management
-                    </p>
-
-                </div>
-
-                <div class="experience-date">
-                    2024 — Present
-                </div>
-
+            <div class="finance-value">
+                DCF
             </div>
 
-
-            <div class="experience-list">
-
-                <div>
-                    Weekly & monthly portfolio reporting
-                </div>
-
-                <div>
-                    Occupancy & leasing analysis
-                </div>
-
-                <div>
-                    Rent growth analysis
-                </div>
-
-                <div>
-                    Renewal & lease analysis
-                </div>
-
-                <div>
-                    Collections & AR analysis
-                </div>
-
-                <div>
-                    Portfolio KPI reporting
-                </div>
-
-                <div>
-                    Vacancy analysis
-                </div>
-
-                <div>
-                    CapEx & renovation analysis
-                </div>
-
-                <div>
-                    Portfolio turnover analysis
-                </div>
-
-                <div>
-                    ESG tracking & reporting
-                </div>
-
+            <div class="finance-note">
+                Cash flow & valuation analysis
             </div>
 
         </div>
 
-    </section>
 
+        <div class="finance-item">
 
-    <!-- =========================
-         SKILLS
-    ========================= -->
-
-    <section class="skills" id="skills">
-
-        <div class="section-heading">
-
-            <div class="section-label">
-                Skills & Tools
+            <div class="finance-name">
+                Investment Analysis
             </div>
 
-            <h2>
-                Analytical toolkit.
-            </h2>
-
-            <p class="section-intro">
-                Tools and areas I use to analyze financial and real estate
-                data and build structured reporting solutions.
-            </p>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-
-                <h3>Finance</h3>
-
-                <div class="skill-tags">
-                    <span class="skill-tag">Financial Analysis</span>
-                    <span class="skill-tag">KPI Analysis</span>
-                    <span class="skill-tag">Variance Analysis</span>
-                    <span class="skill-tag">Portfolio Analysis</span>
-                    <span class="skill-tag">Reporting</span>
-                </div>
-
+            <div class="finance-value">
+                Valuation
             </div>
 
-
-            <div class="skill-card">
-
-                <h3>Real Estate</h3>
-
-                <div class="skill-tags">
-                    <span class="skill-tag">Asset Management</span>
-                    <span class="skill-tag">Rent Growth</span>
-                    <span class="skill-tag">Occupancy</span>
-                    <span class="skill-tag">Collections</span>
-                    <span class="skill-tag">CapEx</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>Analytics & Tools</h3>
-
-                <div class="skill-tags">
-                    <span class="skill-tag">Microsoft Excel</span>
-                    <span class="skill-tag">Power BI</span>
-                    <span class="skill-tag">Data Analysis</span>
-                    <span class="skill-tag">Dashboards</span>
-                    <span class="skill-tag">Data Visualization</span>
-                </div>
-
+            <div class="finance-note">
+                Underwriting & market analysis
             </div>
 
         </div>
 
-    </section>
 
+        <div class="finance-item">
 
-    <!-- =========================
-         PROJECTS
-    ========================= -->
-
-    <section class="projects" id="projects">
-
-        <div class="section-heading">
-
-            <div class="section-label">
-                Selected Projects
+            <div class="finance-name">
+                Analytics
             </div>
 
-            <h2>
-                Real estate<br>
-                analytics in practice.
-            </h2>
-
-            <p class="section-intro">
-                Selected analytical frameworks, reporting solutions and
-                dashboards developed through real estate asset management
-                work.
-            </p>
-
-        </div>
-
-
-        <div class="project-grid">
-
-
-            <!-- PROJECT 01 -->
-
-            <div class="project-card">
-
-                <div class="project-number">
-                    01 / REAL ESTATE ANALYTICS
-                </div>
-
-                <h3>
-                    Rent Growth Analysis
-                </h3>
-
-                <p>
-                    Analyzed rent growth across property and regional levels
-                    to evaluate leasing performance and identify key drivers.
-                </p>
-
-                <div class="project-tools">
-                    <span>Excel</span>
-                    <span>Financial Analysis</span>
-                    <span>Real Estate</span>
-                </div>
-
-                <a href="#" class="project-link">
-                    View Project →
-                </a>
-
+            <div class="finance-value">
+                Excel + Power BI
             </div>
 
-
-            <!-- PROJECT 02 -->
-
-            <div class="project-card">
-
-                <div class="project-number">
-                    02 / REAL ESTATE ANALYTICS
-                </div>
-
-                <h3>
-                    Stabilized Vacant Unit Analysis
-                </h3>
-
-                <p>
-                    Developed an analytical framework to identify and evaluate
-                    vacant units and their stabilized rent potential.
-                </p>
-
-                <div class="project-tools">
-                    <span>Excel</span>
-                    <span>Data Analysis</span>
-                    <span>Asset Management</span>
-                </div>
-
-                <a href="#" class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <!-- PROJECT 03 -->
-
-            <div class="project-card">
-
-                <div class="project-number">
-                    03 / CAPEX ANALYSIS
-                </div>
-
-                <h3>
-                    Renovation Cost Analysis
-                </h3>
-
-                <p>
-                    Built a structured framework to analyze renovation costs,
-                    budgets and unit-level project information.
-                </p>
-
-                <div class="project-tools">
-                    <span>Excel</span>
-                    <span>CapEx</span>
-                    <span>Reporting</span>
-                </div>
-
-                <a href="#" class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <!-- PROJECT 04 -->
-
-            <div class="project-card">
-
-                <div class="project-number">
-                    04 / PORTFOLIO ANALYSIS
-                </div>
-
-                <h3>
-                    Portfolio Turnover Analysis
-                </h3>
-
-                <p>
-                    Analyzed turnover trends and property-level performance
-                    to support portfolio reporting and asset management.
-                </p>
-
-                <div class="project-tools">
-                    <span>Excel</span>
-                    <span>Portfolio Analytics</span>
-                </div>
-
-                <a href="#" class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <!-- PROJECT 05 -->
-
-            <div class="project-card">
-
-                <div class="project-number">
-                    05 / ESG ANALYTICS
-                </div>
-
-                <h3>
-                    ESG Energy & Water Tracker
-                </h3>
-
-                <p>
-                    Developed a structured tracker for monitoring energy and
-                    water savings initiatives across a real estate portfolio.
-                </p>
-
-                <div class="project-tools">
-                    <span>Excel</span>
-                    <span>ESG</span>
-                    <span>Dashboard</span>
-                </div>
-
-                <a href="#" class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-
-            <!-- PROJECT 06 -->
-
-            <div class="project-card">
-
-                <div class="project-number">
-                    06 / DASHBOARD
-                </div>
-
-                <h3>
-                    Rental Dashboard
-                </h3>
-
-                <p>
-                    Built reporting views to track occupancy, leasing,
-                    renewals, rent growth and other key property metrics.
-                </p>
-
-                <div class="project-tools">
-                    <span>Excel</span>
-                    <span>Dashboard</span>
-                    <span>KPI Reporting</span>
-                </div>
-
-                <a href="#" class="project-link">
-                    View Project →
-                </a>
-
+            <div class="finance-note">
+                Reporting & decision support
             </div>
 
         </div>
 
-    </section>
+
+        <div class="chart">
+
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================= -->
 
-    <section class="contact" id="+916396678536">
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+    <div class="section-heading">
 
         <div class="section-label">
-            Let's Connect
+            About Me
         </div>
 
         <h2>
-            Interested in working together?
+            A finance professional<br>
+            with a broad analytical focus.
         </h2>
 
-        <p>
-            I'm open to opportunities in finance, analytics and real estate
-            asset management.
+        <p class="section-intro">
+
+            My experience spans financial analysis, investment analysis,
+            real estate asset management and data-driven reporting.
+
         </p>
 
-        <div class="contact-buttons">
+    </div>
 
-            
-            <a href="https://www.linkedin.com/in/manya-agarwal-b50b68227/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2WHyzmBHSC%2BW5BeNXCji5A%3D%3D" class="btn btn-primary">
-                LinkedIn →
-            </a>
 
-            <a href="mailto:manyaagarwal15@gmail.com"
-               class="btn btn-secondary">
-                Email Me
+    <div class="about-grid">
+
+
+        <div class="about-text">
+
+            <p>
+
+                I am a Financial Analyst with a background in Commerce,
+                Economics, Accounting and Finance. My work combines
+                financial analysis with structured problem-solving and
+                data-driven decision making.
+
+            </p>
+
+
+            <p>
+
+                My professional experience has been in U.S.-based real estate
+                asset management, where I have worked across portfolio
+                reporting, financial analysis, forecasting, valuation,
+                underwriting and performance analytics.
+
+            </p>
+
+
+            <p>
+
+                I am particularly interested in opportunities where
+                financial analysis, valuation, investment research,
+                portfolio analysis and quantitative thinking come together.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="about-highlight">
+
+            <h3>
+                Areas of interest
+            </h3>
+
+
+            <ul>
+
+                <li>
+                    Investment Banking
+                </li>
+
+                <li>
+                    Investment & Equity Research
+                </li>
+
+                <li>
+                    Asset & Portfolio Management
+                </li>
+
+                <li>
+                    Real Estate Finance
+                </li>
+
+                <li>
+                    Financial Modelling & Valuation
+                </li>
+
+                <li>
+                    Data-Driven Financial Analysis
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section id="experience">
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            Professional Experience
+        </div>
+
+        <h2>
+            Real Estate Asset Management
+        </h2>
+
+        <p class="section-intro">
+
+            My current professional experience has given me exposure to
+            financial analysis, portfolio reporting, valuation, forecasting,
+            underwriting and strategic analytical projects.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="experience-card">
+
+
+        <div class="experience-top">
+
+            <div class="experience-title">
+
+                <h3>
+                    Financial Analyst
+                </h3>
+
+                <p>
+                    Gallagher and Mohan — Real Estate Asset Management
+                </p>
+
+            </div>
+
+            <div class="experience-date">
+                Sep 2024 — Present
+            </div>
+
+        </div>
+
+
+
+        <div class="experience-category">
+            Financial Analysis & Investment Support
+        </div>
+
+
+        <div class="experience-list">
+
+            <div>
+                Financial modelling and DCF analysis
+            </div>
+
+            <div>
+                Real estate underwriting
+            </div>
+
+            <div>
+                Valuation and cash flow analysis
+            </div>
+
+            <div>
+                Forecasting and market analysis
+            </div>
+
+            <div>
+                Budget vs. actual analysis
+            </div>
+
+            <div>
+                Financial variance analysis
+            </div>
+
+            <div>
+                Rent roll and T12 analysis
+            </div>
+
+            <div>
+                Investment and return analysis
+            </div>
+
+        </div>
+
+
+
+        <div class="experience-category">
+            Portfolio Analytics & Reporting
+        </div>
+
+
+        <div class="experience-list">
+
+            <div>
+                Weekly, monthly and quarterly reporting
+            </div>
+
+            <div>
+                Property, regional, fund and portfolio analysis
+            </div>
+
+            <div>
+                Occupancy and rent growth analysis
+            </div>
+
+            <div>
+                Renewal and lease expiration analysis
+            </div>
+
+            <div>
+                Collections and 90+ AR analysis
+            </div>
+
+            <div>
+                Vacancy and move-out analysis
+            </div>
+
+            <div>
+                Leasing traffic and lead conversion analysis
+            </div>
+
+            <div>
+                KPI reporting and performance analysis
+            </div>
+
+        </div>
+
+
+
+        <div class="experience-category">
+            Analytical Projects
+        </div>
+
+
+        <div class="experience-list">
+
+            <div>
+                AI-enabled collections impact analysis
+            </div>
+
+            <div>
+                Multi-year rent growth analysis
+            </div>
+
+            <div>
+                Stabilized vacant unit analysis
+            </div>
+
+            <div>
+                CapEx and renovation tracking
+            </div>
+
+            <div>
+                ESG energy and water tracking
+            </div>
+
+            <div>
+                Market comparable analysis
+            </div>
+
+            <div>
+                Work order analysis
+            </div>
+
+            <div>
+                Vacancy and lead conversion analysis
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section class="skills" id="skills">
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            Skills
+        </div>
+
+        <h2>
+            Skills & Tools
+        </h2>
+
+        <p class="section-intro">
+
+            A combination of finance, analytical and technology skills
+            developed through professional experience and independent
+            learning.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="skills-grid">
+
+
+        <div class="skill-card">
+
+            <h3>
+                Finance
+            </h3>
+
+            <div class="skill-tags">
+
+                <span class="skill-tag">
+                    Financial Modelling
+                </span>
+
+                <span class="skill-tag">
+                    DCF
+                </span>
+
+                <span class="skill-tag">
+                    Valuation
+                </span>
+
+                <span class="skill-tag">
+                    Underwriting
+                </span>
+
+                <span class="skill-tag">
+                    Investment Analysis
+                </span>
+
+                <span class="skill-tag">
+                    Forecasting
+                </span>
+
+                <span class="skill-tag">
+                    Variance Analysis
+                </span>
+
+                <span class="skill-tag">
+                    Financial Statement Analysis
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill-card">
+
+            <h3>
+                Analytics & Software
+            </h3>
+
+            <div class="skill-tags">
+
+                <span class="skill-tag">
+                    Advanced Excel
+                </span>
+
+                <span class="skill-tag">
+                    Power BI
+                </span>
+
+                <span class="skill-tag">
+                    Microsoft Word
+                </span>
+
+                <span class="skill-tag">
+                    PowerPoint
+                </span>
+
+                <span class="skill-tag">
+                    Argus
+                </span>
+
+                <span class="skill-tag">
+                    Yardi
+                </span>
+
+                <span class="skill-tag">
+                    RealPage
+                </span>
+
+                <span class="skill-tag">
+                    Rent Manager Express
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="skill-card">
+
+            <h3>
+                Data & AI
+            </h3>
+
+            <div class="skill-tags">
+
+                <span class="skill-tag">
+                    KPI Tracking
+                </span>
+
+                <span class="skill-tag">
+                    Dashboard Development
+                </span>
+
+                <span class="skill-tag">
+                    Time-Series Analysis
+                </span>
+
+                <span class="skill-tag">
+                    Data Reconciliation
+                </span>
+
+                <span class="skill-tag">
+                    AI-Assisted Analysis
+                </span>
+
+                <span class="skill-tag">
+                    AI Prompt Engineering
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="projects" id="projects">
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            Portfolio
+        </div>
+
+        <h2>
+            Selected Financial<br>
+            & Analytical Projects
+        </h2>
+
+        <p class="section-intro">
+
+            A selection of analytical projects developed through my
+            professional experience. Project materials will be presented
+            using anonymized or recreated data where required.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="project-grid">
+
+
+        <!-- PROJECT 01 -->
+
+        <div class="project-card">
+
+            <div class="project-number">
+                01 / REAL ESTATE ANALYSIS
+            </div>
+
+            <h3>
+                Stabilized Vacant Unit Revenue Analysis
+            </h3>
+
+            <p>
+
+                Developed a framework to evaluate potential stabilized
+                revenue from vacant units using rent roll data and
+                market/stabilized rent assumptions.
+
+            </p>
+
+            <div class="project-tools">
+
+                <span>Excel</span>
+                <span>Financial Analysis</span>
+                <span>Real Estate</span>
+
+            </div>
+
+            <a href="#" class="project-link">
+                View Project →
             </a>
 
         </div>
 
-    </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+        <!-- PROJECT 02 -->
 
-    <footer>
+        <div class="project-card">
 
-        © 2026 Manya Agarwal · Financial Analyst
+            <div class="project-number">
+                02 / REVENUE ANALYSIS
+            </div>
 
-    </footer>
+            <h3>
+                Multi-Year Rent Growth Analysis
+            </h3>
+
+            <p>
+
+                Built a multi-year analysis of rental performance to
+                evaluate trends, property-level changes and broader
+                portfolio performance.
+
+            </p>
+
+            <div class="project-tools">
+
+                <span>Excel</span>
+                <span>Time-Series Analysis</span>
+                <span>Real Estate</span>
+
+            </div>
+
+            <a href="#" class="project-link">
+                View Project →
+            </a>
+
+        </div>
+
+
+
+        <!-- PROJECT 03 -->
+
+        <div class="project-card">
+
+            <div class="project-number">
+                03 / INVESTMENT ANALYTICS
+            </div>
+
+            <h3>
+                Collection Trend Analysis — AI Initiative
+            </h3>
+
+            <p>
+
+                Analyzed collection performance and late-payer trends
+                before and after an AI-enabled payment reminder initiative
+                to assess its financial impact.
+
+            </p>
+
+            <div class="project-tools">
+
+                <span>Excel</span>
+                <span>Trend Analysis</span>
+                <span>AI Analytics</span>
+
+            </div>
+
+            <a href="#" class="project-link">
+                View Project →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ADDITIONAL PORTFOLIO WORK
+========================= -->
+
+<section class="additional-work">
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            Additional Portfolio Work
+        </div>
+
+        <h2>
+            Reporting & Analytics
+        </h2>
+
+        <p class="section-intro">
+
+            Additional reporting frameworks and analytical solutions
+            developed as part of my professional experience.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="work-grid">
+
+
+        <div class="work-card">
+
+            <h3>
+                ESG Energy & Water Tracker
+            </h3>
+
+            <p>
+
+                Developed a structured tracker to monitor energy and water
+                consumption, savings initiatives and portfolio-level ESG
+                information.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="work-card">
+
+            <h3>
+                Rental & Portfolio KPI Dashboard
+            </h3>
+
+            <p>
+
+                Developed dashboard-based reporting to monitor occupancy,
+                leasing, renewals, rent growth, collections and other
+                portfolio performance indicators.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section class="education" id="education">
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            Education
+        </div>
+
+        <h2>
+            Academic Foundation
+        </h2>
+
+    </div>
+
+
+    <div class="education-card">
+
+        <h3>
+            Graduation in Commerce (Hons.)
+        </h3>
+
+        <p>
+            Commerce, Economics & Finance
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CERTIFICATIONS
+========================= -->
+
+<section class="certifications">
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            Certifications
+        </div>
+
+        <h2>
+            Professional Development
+        </h2>
+
+    </div>
+
+
+
+    <div class="cert-grid">
+
+
+        <div class="cert-card">
+
+            <h3>
+                J.P. Morgan Investment Banking Virtual Experience
+            </h3>
+
+            <p>
+                Forage — M&A Screening, DCF Valuation & Scenario Analysis
+            </p>
+
+        </div>
+
+
+        <div class="cert-card">
+
+            <h3>
+                Argus Training
+            </h3>
+
+            <p>
+                Real Estate Valuation & Cash Flow Modelling
+            </p>
+
+        </div>
+
+
+        <div class="cert-card">
+
+            <h3>
+                Real Estate Financial Modelling
+            </h3>
+
+            <p>
+                Udemy — Acquisition Modelling & Pro Forma Analysis
+            </p>
+
+        </div>
+
+
+        <div class="cert-card">
+
+            <h3>
+                Trading Basics
+            </h3>
+
+            <p>
+                Coursera — Financial Accounting, Markets & Expected Returns
+            </p>
+
+        </div>
+
+
+        <div class="cert-card">
+
+            <h3>
+                Advanced Financial Studies
+            </h3>
+
+            <p>
+                Derivatives, Fixed Income, Equity Valuation & Portfolio Management
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-label">
+        Let's Connect
+    </div>
+
+    <h2>
+        Let's talk finance.
+    </h2>
+
+    <p>
+
+        Interested in financial analysis, investment analysis,
+        portfolio management, real estate finance or data-driven
+        finance opportunities.
+
+    </p>
+
+
+    <div class="contact-buttons">
+
+        <!-- REPLACE # WITH YOUR LINKEDIN URL -->
+
+        <a href="https://www.linkedin.com/in/manya-agarwal-b50b68227/?" class="btn btn-primary">
+            LinkedIn →
+        </a>
+
+
+        <!-- REPLACE EMAIL -->
+
+        <a href="mailto:manyaagarwal15@gmail.com"
+           class="btn btn-secondary">
+
+            Email Me
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026 Manya Agarwal · Financial Analyst
+
+</footer>
 
 
 </body>
+
 </html>
